@@ -1,0 +1,485 @@
+/*
+ * TEMPORARY STYLESHEET
+ * Developers: place styles for new features/modifications here and annotate them with "@since [release number]." 
+ * All styles are to be moved to permanent stylesheets prior to release.
+ */
+ 
+ 
+
+
+ /* ---------------- BEGIN: Evaluation widget (@since 9.1 SP1) ---------------- */
+
+.gradeWrapper {
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index:111;
+  margin:0 4px;
+  border:3px solid #555;
+  border-bottom:0;
+  -moz-border-radius:9px 9px 0 0;
+  -webkit-border-top-left-radius:9px;
+  -webkit-border-top-right-radius:9px;
+  padding:4px 9px;
+  background:#888;
+  height:40px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4); 
+  -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  zoom:1;
+}
+
+.gradeSide h2 {}/* creates a line break */
+.gradeActions {
+  white-space:nowrap; 
+  position:absolute; 
+  top:-23px; 
+  right:12px;
+  border:2px solid #555;
+  border-bottom:0;
+  -moz-border-radius:3px 3px 0 0;
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-top-right-radius:3px;
+  padding:3px;
+  background:#888; 
+}
+
+.gradeItemsWrapper {overflow-y:auto; padding:6px 12px; background:#fff;}
+.gradeItemsWrapper .paletteItems {font-size:100%;}
+.gradeSide .tocTreeWrapper {overflow:auto;}
+ 
+.gradeSide {
+  position:absolute;
+  top:0;
+  right:-12px;
+  bottom:auto;
+  left:auto;
+  margin:0;
+  padding:4px;
+  border:3px solid #555;
+  -moz-border-radius:9px;
+  -webkit-border-radius:9px;
+  background:#888;
+}
+
+/* styles to align the TOC with the course menu */
+.gradeBottom_pullExpanded {left:200px;}
+.gradeBottom_pullCollapsed {left:0;}
+.gradeSide_pullExpanded {}
+.gradeSide_pullCollapsed {}
+
+/* styles applied to the contentPanel to make room for the TOC */
+.gradeSide_panel .container {padding-right:42.5%; position:relative;}
+.gradeSide_panelMax .container {padding-right:370px; position:relative;}
+.gradeSide_panelMax #tocCart {left:-12px;}
+.gradeBottom_min {padding-bottom:30px;}
+.gradeBottom_max {padding-bottom:330px;}
+.gradeBottom_open {padding-bottom:160px;}
+
+/* ---------------- END: Evaluation widget (@since 9.1 SP1) ---------------- */
+
+/* @Since 9.1SP3 */
+.disabledQuestionRow {background-color:#D3D3D3}
+
+/* @Since 9.1SP3 */
+li div.contentListRight span.extraCredit {display:block;}
+li.hideQuestionDetails {min-height:30px;}
+/* add opposite text-align version to rtl */
+li.hideQuestionDetails div.contentListRight{width:19em;text-align:left;}
+li.hideQuestionDetails div.contentListRight span.extraCredit {display:inline!important;}
+li.hideQuestionDetails div.contentListRight span span {display:inline!important;}
+.hideQuestionDetails .contentListRightOffset  {padding:6px 19.1em 6px 28px;}
+
+/* @Since 9.1SP4 */
+div.referringCanvases {border-top: 1px solid rgb(238, 238, 238);}
+   
+/* @Since 9.1SP3
+The automatically generated question numbers on the canvas need padding for surveys but not on tests: 
+*/
+span.autoQuestionNumber {margin: 0px 0px 0px 10px;}
+div.contentListRightOffset h3 span.autoQuestionNumber {margin: 0px; }
+
+/* @Since 9.1SP3 */
+div.viewGradeAttempt {border: 2px solid #ccc}
+div.viewGradeAttempt h3 a {
+	background: rgb(126,136,136); 
+	color: white; 
+	margin: 9px 0px 0px;
+	padding: 0.33em 4px 0.33em 3.2em;
+	}
+
+/* For Grade Center favorites in control panel  */
+.navPaletteContent .submenu li.favorite { padding-left:10px; }
+
+/* @Since 9.1sp3 */
+div ul li div.collabComments {
+	overflow:auto !important;
+	background-color: white;
+}
+
+/* @Since 9.1sp3 */
+div.comments div div.collabComments {
+	overflow:auto !important;
+	max-height: 100px;
+	background-color: white;
+}
+
+/* @Since 9.1sp3 */
+div.editBlock table.textboxtable {
+	background: none;
+}
+
+/* @Since 9.1sp3 */
+div.editBlock table.textboxtable tbody tr th,
+div.editBlock table.textboxtable tbody tr td,  
+div.editBlock table.textboxtable tbody tr,
+div.editBlock table.textboxtable table {
+	padding: 0px;
+	border-top: none;
+	background: none;
+}
+
+/* @Since 9.1sp3 */
+div.editgrade div.editBlock {
+	float: none;
+}
+
+/* @Since 9.1sp3 */
+.collabViewComments {
+	/* This doesn't work 'nicely' in all browsers float: right; */
+}
+
+/* @Since 9.1sp3 */
+h3 a.questionExpander {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:transparent url(images/indicators.png) no-repeat scroll 0 -744px !important;
+color:#FFFFFF;
+display:block;
+padding:3px 16px;
+}
+
+/* @Since 9.1sp3 */
+h3 a.questionExpander.open {
+background:transparent url(images/indicators.png) no-repeat scroll 0 -1338px !important;
+}
+
+/* @Since 9.1sp3 */
+div.studentGradesCommentPreview {overflow:auto !important; width:200px; height:110px; }
+div.grdDetEditTabCommentPreview {overflow:auto !important; width:110px; height:110px; }
+div.grdDetHistTabCommentPreview {overflow:auto !important; width:200px; height:110px; }
+
+
+
+/*Begin timed assessment*/
+
+/* @Since 9.1sp6 */
+.answerSavedButton, .answerSavedButton:hover, .answerSavedButton:focus {
+ background-image:url(/images/ci/icons/current_li.png)!important;
+  background-repeat:no-repeat;
+  background-position:6px center;
+  background-color:#cdcdcd;
+  border-color:#aaa;
+  color:#444;
+  padding-left:22px!important;
+}
+
+.answerSavedButton:hover, .answerSavedButton:focus {
+  background-color:#ddd;
+  border-color:#999;
+}
+
+/* @Since 9.1sp6 */
+.answerSavingButton, .answerSavingButton:hover, .answerSavingButton:focus {
+  background-color:#ccc;
+  color:#444;
+   border-color:#999;
+  background-image:url(/images/ci/icons/file_li.gif)!important;
+  background-repeat:no-repeat;
+  background-position:6px center;
+  padding-left:22px!important;
+}
+
+
+/* @Since 9.1sp6 */
+.continuousTimerWarning {
+}
+.timeUpWarning {
+  color:#CF0C0C;
+}
+.thirtySecondWarning {
+  color:#CF0C0C
+}
+.oneMinuteWarning {
+  color:#CF0C0C;
+}
+.fiveMinuteWarning {
+  color:#000;
+}
+.halfTimeWarning {
+  color:#000;
+}
+.headerForProgressBar {
+  position:relative; 
+  z-index:100;
+}
+ 
+div.assessmentPortletBlock h3.headerForProgressBar a {
+	background:none !important;
+}
+
+.progressBar {	
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	z-index:90; 
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.progressBarStyle {
+	background:#B6F796;
+	background-image: -moz-linear-gradient(100% 100% 90deg, #83AF6D, #B6F796); 
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 90%, from(#B6F796), to(#83AF6D));
+}
+.progressBarStyleOneMin {
+	background: #FFE79F;
+	background-image: -moz-linear-gradient(100% 100% 90deg, #DFC77D, #FFE79F); 
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 90%, from(#FFE79F), to(#DFC77D)); 
+}
+
+.progressBarStyleThirtySec {
+	background: #FFAFAF;
+	background-image: -moz-linear-gradient(100% 100% 90deg, #FF6F6F, #FFAFAF); 
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 90%, from(#FFAFAF), to(#FF6F6F));
+}
+.progressBarStyleOvertime {
+	background: #FFAFAF;
+	background-image: -moz-linear-gradient(100% 100% 90deg, #FF6F6F, #FFAFAF); 
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 90%, from(#FFAFAF), to(#FF6F6F));
+}
+
+.timerBar {
+	position:relative;
+	padding:3px 6px;
+	text-align: center; 
+	color:000;
+	border:2px solid #fff;	
+	background:#f9f9f9;
+	background-image: -moz-linear-gradient(100% 100% 90deg,  #fff, #f9f9f9);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 90%, from(#f9f9f9), to(#fff));
+	-moz-box-shadow:0 3px 4px rgba(0,0,0,0.15); 
+	-webkit-box-shadow:0 3px 4px rgba(0,0,0,0.15);
+	text-shadow:0 1px 0 rgba(255, 255, 255, 0.5);
+	font-size:105%;
+	font-weight:bold;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	margin:4px 14px 0;
+}
+
+.timer strong {
+	position:relative;
+	z-index:100;
+}
+
+.timerText {padding:6px 14px;}
+
+.timer.liveArea {padding:6px 7px 9px}
+
+.questionStatus {padding:3px 2px 0;}
+
+/* @Since 9.1sp6 */
+.timedQuestionStatus {
+    border-top:2px groove #ddd; 
+    border-top:2px groove rgba(255, 255, 255, 0.3);  
+    padding:3px 0 0;
+	margin: 0 2px;
+}
+
+.completionContainer {padding:6px 12px 0;}
+
+.questionStatus .questionStatusLabel {
+	margin: 0;
+	font-weight: normal;
+	letter-spacing: 0;
+}
+.questionStatus .questionStatusLabel a {
+	color: #666;
+	text-decoration: none;
+}
+.questionStatus .questionStatusLabel a:hover {
+	text-decoration: underline;
+	color: #000;
+}
+
+.timerMessage {
+	padding:2px 0 0; 
+	text-shadow:0 1px 0 rgba(255, 255, 255, 0.5);
+	float:right;
+}
+
+.timeLabel {color:#666;	font-weight:normal;}
+.timeValue {font-size:120%;}
+
+.timer-toggle {
+	background-image:url(images/indicators.png);
+	background-repeat: no-repeat;
+}
+
+.timer-toggle.timer-collapsed {background-position:2px -595px; padding: 0 0 4px 14px; display:inline-block}
+.timer-toggle.timer-expanded {
+	position:absolute;
+	width:20px;
+	height:20px;
+	top:5px;
+	left:4px;
+	background-position:  4px -1186px;
+}
+
+@font-face {
+	font-family: 'Pictos';
+	src: url('/ui/fonts/pictos-web.eot');
+	src: local('☺'), url('/ui/fonts/pictos-web.woff') format('woff'), url('/ui/fonts/pictos-web.ttf') format('truetype'), url('/ui/fonts/pictos-web.svg#webfontphKv1xv9') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.timerBar .timerLabel:before, .timerMessage:before {
+	font: 			1.4em/0 'Pictos', sans-serif;
+	margin-right: 	0.4em;	
+}
+
+.progressBarStyleOvertime + .timerLabel:before {
+	content: "t" ; 
+	color:#CF0C0C;
+}
+.progressBarStyleOneMin + .timerLabel:before  {
+	content: "!" ; 
+	color: #7F6B2F;
+}
+
+.progressBarStyleThirtySec + .timerLabel:before  {
+	content: "!" ; 
+	color:#CF0C0C;
+}
+
+.timerMessage:before {content: "t";}
+
+.halfTimeWarning:before {color:#999}
+
+/*End timed assessment*/
+
+
+
+/* actionBar equivalents are in page_components.css (L.260~274 of v.54) */
+.tabActionBar {margin:-1px 0 0; padding:6px 0; z-index:110;}
+.tabActionBar ul li {zoom:1; position:relative;}
+.tabActionBar ul li.mainButton {z-index:110;}
+.tabActionBar ul li.secondaryButton {z-index:109;}
+.tabActionBar ul li.mainButton:hover {z-index:112;}
+.tabActionBar .mainButton {float:left; margin:2px 0 0 0; padding-right:1px;}
+.tabActionBar .secondaryButton {float:right; margin:2px 0 0 4px ;}
+
+/* actionBar equivalents are in controls.css (L.127, 132 of v.41) */
+.tabActionBar button-1, .tabActionBar button-2 {display: block;}
+.tabActionBar button-2 {border-width: 1px;}
+
+/* actionBar equivalents are in dynamic_elements.css (L.33-35, 93-95, 111 of v.121) */
+.tabActionBar ul li a.liveAreaTab:focus,
+.tabActionBar ul li.mainButton a.liveAreaTab,
+.tabActionBar ul li.secondaryButton a.liveAreaTab {
+	margin-top:-2px;
+	background:#E2EEFE url(images/backgrounds_h.png) repeat-x 0 -350px;
+	border:2px solid #444A6C;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, 0.4); 
+	-webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4); 
+	zoom:1;
+	_width:138px;
+	padding:2px 4px 3px;
+}
+.tabActionBar ul li a.liveAreaTab:focus,
+.tabActionBar ul li.mainButton a.liveAreaTab,
+.tabActionBar ul li.secondaryButton a.liveAreaTab {
+	top: 4px;
+	*top: 8px;
+	position: relative;
+	padding: 4px 9px;
+	background-image:none;
+	color: #000;
+	border-bottom: none;
+	-moz-border-radius: 2px 2px 0 0;
+	-webkit-border-radius: 2px 2px 0 0;
+	z-index:2;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+}
+
+.tabActionBar ul li.mainButton a.liveAreaTab, .tabActionBar ul li.secondaryButton a.liveAreaTab {top:8px; *top:9px; *z-index:200}
+
+/* @Since 9.1sp6 */
+.u_floatThis-right p.taskbuttondiv {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+/* @Since 9.1sp6 - NOTE: This is the same as .genericButton, .genericButtonImg, .browse, .browseIcon, input[type="submit"].genericButton,... in controls.css but put here
+ * to separate it out as new functionality here. */
+.u_floatThis-left .pagelink, 
+.u_floatThis-right .pagelink {
+    background-color: #ededed;
+    border: 1px solid #ccc; 
+    border-bottom: 1px solid #aaa; 
+    border-right: 1px solid #aaa;
+    color:#333;
+    font-weight: normal;
+    background-position:0 -45px;
+    *display:inline-block;  
+}
+
+/* @Since 9.1sp6 */
+.attemptNavContainer {
+  padding: 10px 12px 45px !important;
+}
+
+/* @Since 9.1sp6 */
+.collabContainer {
+  padding: 10px 12px 32px;
+}
+
+/* @Since 9.1sp6 */
+.overtimeStyle {
+  color: #FF0000;
+  font-weight: bold;
+}
+
+/* @Since 9.1sp6 */
+.blogNav a {
+  display:inline-block;
+  margin: 2px;
+}
+
+@media print {
+  .donotprint {
+    display:none;
+  }
+}
+
+/*Modifications to support 2011 theme related markup changes */
+.modeSwitchWrap, .helpLink { z-index: 1; }
+
+/* @Since 9.1sp8 */
+div.checkListActions {
+  padding-bottom: 10px;
+}
+
+/*
+ * END TEMPORARY 
+ */
+ 
+ 

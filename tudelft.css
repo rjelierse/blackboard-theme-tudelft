@@ -1,0 +1,950 @@
+/**
+ * TU Delft theme overrides for as_learn.
+ *
+ * This file has been updated for styles up to Blackboard 9.1 Service Pack 8.
+ *
+ * Additions to theme folder:
+ * images/appTabs_bg.gif
+ * images/button2_back_active.gif
+ * images/button2_back.gif
+ * images/button_back_active.gif
+ * images/button_back.gif
+ * images/tabs_bg_active.gif
+ * images/tabs_bg.gif
+ * tudelft.css
+ *
+ * @author Raymond Jelierse <info@raymondjelierse.nl>
+ */
+
+html {
+    font-family: Tahoma,Arial,sans-serif;
+}
+body {
+    background-color: #fff;
+}
+a {
+    color: #00a6d6;
+}
+
+/* @file assessments.css */
+
+.assessmentInstructions {
+    position: relative;
+    margin: 0 0 12px;
+    padding: 3px 12px 6px;
+    background: #f1f1f1;
+}
+
+.assessmentInstructions h3 {
+    margin: 3px 0;
+    padding: 0;
+}
+
+.assessmentPortlet div.assessmentPortletBlock {
+    background: #99dbef;
+    border: 1px solid #00a6d6;
+    box-shadow: none;
+    -mox-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+ul.assessmentBlockGroups li ul.itemGroups li a, ul.itemGroups li ul.items li a {
+    background: #00a6d6;
+    border-bottom: 0;
+    color: #fff;
+}
+
+.qIncomplete {
+    border: 1px solid #00a6d6;
+    color: #007da1;
+    background: #fff;
+}
+
+.qComplete {
+    border: 1px solid #00a6d6;
+    background-color: #00a6d6;
+    color: #fff;
+}
+
+/* @file blogs.css */
+div.blogContainer h3.blogHead {
+    background: #99dbef;
+    color: #000;
+}
+
+div.blogContainer div.blogEntry {
+    background: #fff;
+    border: 0;
+}
+
+div.blogContainer .newItems {
+    background: #99dbef;
+}
+
+div.journalContainer h3.blogHead {
+    background: #99dbef;
+    color: #000; /*text-transform:uppercase; letter-spacing:0.2em;font-weight:normal;*/
+}
+
+.newItems {
+    background: #99dbef;
+}
+
+.contentAreaNav {
+    border-top: 2px solid #00a6d6;
+}
+
+.contentAreaPalette ul#aboutBlog li.currentBlogView {
+    border: 2px solid #00a6d6;
+    background: #fff;
+}
+
+.contentAreaNav a.itemHead {
+    background-color: #00a6d6;
+    color: #fff;
+}
+
+.contentAreaNav a.itemHeadOpen {
+    background-color: #fff;
+    color: #0093ab;
+}
+
+.contentAreaPalette {
+    border: 2px solid #00a6d6;
+}
+
+/* @file controls.css */
+.mainButton a, .actionBarMicro .mainButton a, .secondaryButton a, .mainButton a, input[type="submit"].submit,
+.itemHeaderControl a, .button-1, .button-1-img, .button-2, .button-2-img, .button-3, .button-3-img {
+    background: #00a6d6;
+    vertical-align: middle;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+
+#primaryButton, input[type="submit"].submit, .mainButton a, .actionBarMicro .mainButton a, .rumble .mainButton > a,
+.rumble_top .mainButton > a, .button-1, .button-1-img {
+    color: #333;
+    background: url('images/button_back.gif') center left repeat-x #00a6d6;
+    border: 1px solid #00a6d6;
+}
+
+input[type="submit"].submit:hover, .mainButton a:hover, .mainButton a:focus, .actionBarMicro .mainButton a:hover,
+.actionBarMicro .mainButton a:focus, .rumble .mainButton > a:hover, .rumble_top .mainButton > a:hover,
+.rumble .mainButton > a:focus, .rumble_top .mainButton > a:focus, .button-1:hover, .button-1:focus, .button-1-img:hover,
+.button-1-img:focus {
+    background: url('images/button_back_active.gif') center left repeat-x #00a6d6;
+    border: 1px solid #00a6d6;
+}
+
+#secondaryButton, .secondaryButton a, .button-2, .button-2-img {
+    color: #fff;
+    background: url('images/button2_back.gif') center left repeat-x #a5a5a5;
+    border: 1px solid #999;
+}
+
+.secondaryButton a:hover, .secondaryButton a:focus, .button-2:hover, .button-2:focus, .button-2-img:hover,
+.button-2-img:focus {
+    background: url('images/button2_back_active.gif') center left repeat-x #a5a5a5;
+}
+
+.actionBarMicro .secondaryButton a {
+    border-color: transparent;
+    background: transparent;
+    padding: 0 1px 2px;
+    display: block
+}
+
+.actionBarMicro .secondaryButton a:hover,
+.actionBarMicro .active a {
+    border: 1px solid #007da1;
+    background: #99dbef;
+}
+
+.frameResizeToggle {
+    display: none;
+}
+
+.modeSwitch {
+    border: 1px solid #007da1;
+}
+
+.read-on {
+    background-color: #00a6d6;
+}
+
+a.read-off {
+    background-color: #99dbef;
+}
+
+a.read-on:hover, a.read-on:focus {
+    background-color: #99dbef;
+}
+
+a.read-off:hover, a.read-off:focus {
+    background-color: #00a6d6;
+}
+
+.switcherLabel {
+    color: #444;
+    padding: 2px 4px 2px 0 !important;
+    font-weight: normal;
+    float: left;
+}
+
+.vtbeSwitch {
+    position: relative;
+    height: auto;
+    width: auto;
+    float: right;
+}
+
+.vtbeSwitch span {
+    padding: 0;
+    display: inline-block;
+    font-size: 100% !important;
+}
+
+.vtbeSwitch div.modeSwitchWrap {
+    right: 0;
+    background-color: #eeeeee;
+    border: 1px solid #CCCCCC;
+    border-bottom: 0;
+    padding: 4px 6px;
+    top: 0
+}
+
+.localViewToggle a {
+    display: block;
+    padding: 2px 9px;
+    font-size: 85%;
+    text-decoration: none;
+    margin: 1px;
+    color: #000;
+}
+
+.localViewToggle a:hover {
+    background: url('images/button_back.gif') center left repeat-x #00a6d6;
+    color: #333;
+    padding: 2px 9px;
+    border: 1px solid #007da1;
+    margin: 0;
+}
+
+.localViewToggle a.active, div.localViewToggle h2 {
+    background: url('images/button_back.gif') center left repeat-x #00a6d6;
+    color: #333;
+    padding: 2px 9px;
+    border: 1px solid #007da1;
+}
+
+.localViewToggle .sliderWrapper {
+    background: url('images/button_back.gif') center left repeat-x #00a6d6;
+}
+
+.blogEntry .entryText .diff-html-added, .legendbox .field .added-sample {
+    color: #3c0;
+}
+
+.blogEntry .entryText .diff-html-removed, .legendbox .field .removed-sample {
+    text-decoration: line-through;
+}
+
+.blogEntry .entryText .diff-html-changed, .legendbox .field .changed-sample {
+    color: #f90;
+}
+
+/* @file data_collection.css */
+.backLink a {
+    background: url('images/button2_back.gif') left top #a5a5a5;
+    border: 1px solid #999;
+}
+
+.steptitle {
+    background-color: #00a6d6;
+}
+.steptitle span {
+    background-color: #99dbef;
+}
+
+/* @file discussion_board.css */
+div.dbThreadHeader {
+    background: #99dbef;
+}
+
+div.dbThreadFooter {
+    background: #99dbef;
+}
+
+div.threadButtons a.reply, div.dbThreadInfo p a.reply {
+    color: #333;
+    background: url('images/button_back.gif') center left repeat-x #00a6d6;
+    border: 1px solid #00a6d6;
+}
+
+div.threadButtons a.reply:hover, div.dbThreadInfo p a.reply:hover {
+    color: #333;
+    background: url('images/button_back_active.gif') center left repeat-x #00a6d6;
+    border: 1px solid #00a6d6;
+}
+
+div.threadButtons a.browse, div.dbThreadInfo p a.browse {
+    color: #fff;
+    background: url('images/button2_back.gif') center left repeat-x #999;
+    border: 1px solid #666;
+}
+
+div.threadButtons a.browse:hover, div.dbThreadInfo p a.browse:hover {
+    color: #fff;
+    background: url('images/button2_back_active.gif') center left repeat-x #aaa;
+    border: 1px solid #666;
+}
+
+/* @file dynamic_elements.css */
+ul.nav li.sub ul, .menumini ul, div.quickAddPal, div.keyboardAccess, span.currentTags, .liveArea, .liveArea-slim,
+.liveAreaTab, .previewArea, .jumptopage, a.liveAreaTab, a.liveAreaTab:hover, a.liveAreaTab:focus,
+.actionBar ul li a.liveAreaTab:focus, .actionBar ul li.mainButton a.liveAreaTab,
+.actionBar ul li.secondaryButton a.liveAreaTab, .panelTabs li.active a.edit, .panelTabs li.active a.edit:hover,
+.panelTabs li.active a.edit:focus, .flyout, ul.tree li a + img + a:focus, ul.tree li img + img + a:focus,
+div.treeContainer ul.tree li a.itemActive, #learningUnitToc ul.tree li a.itemActive, ul.tree li a.itemActive {
+    background: #fff url(images/backgrounds_h.png) repeat-x 0 -350px;
+    border: 2px solid #00a6d6;
+}
+
+.cmdiv a:hover, .cmdiv a:focus, .menumini a:hover, .menumini a:focus {
+    background-color: #99dbef;
+}
+
+.cmdiv {
+    border: 2px solid #00a6d6;
+    background-color: #fff;
+}
+
+.cmdiv ul {
+    border: 0;
+}
+.cmdiv ul:first-child {
+    padding: 0;
+}
+
+.cmdiv li.contextmenubar_top a, .cmdiv li.contextmenubar_top a:focus, .cmdiv li.contextmenubar_top a:hover,
+.currentTags a.closeCloud, .currentTags a.closeCloud:hover, .currentTags a.closeCloud:focus {
+    background: #00a6d6;
+    border: 2px solid #00a6d6;
+}
+
+.cmdiv li.contextmenubar_top a:focus, .cmdiv li.contextmenubar_top a:hover,
+.currentTags a.closeCloud:hover, .currentTags a.closeCloud:focus {
+    background-color: #00a6d6
+}
+
+.bad, .removing, .brokenFileLink, .portlet span.due.warning {
+    background: #EF312C;
+    border-color: #BF1B17;
+}
+
+.good, .adding {
+    background: #0BA355;
+    border-color: #2D714D;
+}
+
+.infoReceipt {
+    background: #99dbef;
+    border-color: #00a6d6;
+    color: #000;
+}
+
+.attention, .warningReceipt {
+    background: #FFFF99;
+    border-color: #FFCC33;
+    color: #000000;
+    font-weight: normal;
+}
+
+.info-ok {
+    background: #86BF90;
+    border-color: #0BA355;
+    color: #000
+}
+
+/* @file gradebook.css */
+ul.selectList li.sub ul li.current a, ul.selectList li.sub ul li.current a:hover,
+.nav .sub .current a, .nav .sub .current a:hover,
+.nav .sub .current.favorite a, .nav .sub .current.favorite a:hover {
+    background-color: transparent;
+    color: #007da1;
+}
+
+.gradeInfoHeader {
+    -moz-border-radius: 3px;
+    background: #f1f1f1;
+    margin: 0 0 12px;
+    padding: 3px;
+}
+
+.gradeInfoHeader h3 {
+    margin: 0 12px 0 0;
+}
+
+.gradeInfoHeader h3.root {
+    -moz-border-radius: 3px;
+    padding: 3px;
+    background: #888888;
+    color: #FFFFFF;
+}
+
+.gradeInfoHeader h3.root span {
+    color: #FFFFFF;
+}
+
+/* @file layout.css */
+/*@branding - do not remove*/
+.bgBanner {
+    background: #fff;
+    color: #000;
+}
+
+.brandingImgWrap {
+    height: 50px;
+    overflow: hidden;
+}
+
+.bannerImage {
+    margin: 4px 12px 4px 14px;
+}
+
+.topTabs {
+    position: relative;
+    padding: 12px 0 0 0;
+    height: 74px;
+    border-bottom: 0;
+    zoom: 1;
+}
+
+.topTabs-compact {
+    padding-top: 14px;
+    position: relative;
+    border-bottom: 0;
+}
+
+.tabWrapper-left, .tabWrapper-center, .tabWrapper-right {
+    width: auto;
+    padding: 0 14px;
+    background: url('images/appTabs_bg.gif') repeat-x top left transparent;
+}
+
+.appTabs {
+    width: auto;
+    position: relative;
+    border-spacing: 0;
+    border-collapse: separate;
+    top: 0px;
+    font-size: 105%;
+}
+
+.topTabs-compact .appTabs {
+    top: 0;
+}
+
+html*table.appTabs {
+    top: 0px;
+    *top: -2px;
+    *margin-bottom: -4px;
+}
+
+.locationPane {
+    margin-top: 10px;
+    position: relative;
+    overflow: visible;
+    zoom: 1;
+}
+
+.navcollapsed {
+    width: 0px !important;
+    margin-left: 0
+}
+
+.navcollapsed .menuWrap {
+    display: inherit !important;
+}
+
+.pullcollapsed {
+    left: 1px !important;
+}
+
+.containerPortal, .portal .container {
+    background: #fff;
+}
+
+.topRound b {
+    background-color: #99dbef;
+}
+
+.landing .container, .landing .bottomRound b,
+.error .container, .error .bottomRound b {
+    background: #fff;
+}
+
+.portal  .bottomRound b, .portal .container {
+    background-color: #fff;
+}
+
+.ineditmode {
+    padding: 6px 0 0 0;
+}
+
+.noteditmode {
+    padding: 6px 0 0 0;
+}
+
+.ineditmode .listCm, .ineditmode #editmodeWrapper {
+    border: 3px solid #99dbef;
+    background-color: #99dbef;
+    padding-bottom: 0;
+    margin-bottom: 9px;
+}
+
+/* @file modules.css */
+#moduleBody, #moduleBorder,
+.portlet {
+    background-color: #fff;
+    border: 2px solid #00a6d6;
+    margin: 0 5px 10px 5px;
+    padding: 0;
+    _height: 1%;
+    _z-index: 500;
+    position: relative;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+
+.portlet h2 {
+    background: url('images/button_bg.gif') #00a6d6 repeat-x top left;
+    font-size: 1em;
+}
+
+.portlet h2.dragHandle:hover {
+    background: #99dbef;
+    cursor: move;
+}
+
+.portlet h3, #lightbox h3, .portlet div.portletBlock h4, .portlet div.blockContents h4, .flyout h3 {
+    letter-spacing: inherit;
+    color: #007da1;
+    border-bottom: 1px solid #00a6d6;
+}
+
+.eudModule, .styledModule-dark {
+    background-color: #fff;
+    background-image: none;
+    border: 0;
+    padding: 0 0 23px 0;
+}
+
+.eudModule .eudModule-inner, .styledModule-dark .module-inner {
+    overflow-y: auto;
+    min-height: 250px;
+    max-height: 500px;
+    border-bottom: 0;
+    _border-bottom: none;
+}
+
+.portlet .portletBlock {
+    margin: 6px 6px 0px 6px;
+    background: #fff;
+    border: 1px solid #00a6d6;
+    font-size: 100%;
+}
+
+.portlet ul li ul li span.warning, .portlet ul li ul li span.due {
+    color: #f00;
+    border: 1px solid #f00;
+    background: #f99;
+}
+
+.portlet ul li ul li span.warning a, .portlet ul li ul li span.due a {
+    color: #f00;
+}
+
+.portlet ul li ul li span.newItemCount {
+    color: #007da1;
+    border: 1px solid #00a6d6;
+    background: #99dbef;
+}
+
+.portlet ul li ul li span.newItemCount a {
+    color: #007da1;
+}
+
+.portlet .portletBlock h4 {
+    background: #fff;
+}
+
+.portlet .subCategories li a, .blockGroups .itemHead {
+    background: #fff url(images/indicators.png) no-repeat 4px -442px;
+    border-top: 1px solid #00a6d6;
+    color: #007da1;
+}
+
+.viewHeader {
+    background: #fff;
+    border: 0;
+    border-bottom: 1px solid #00a6d6;
+    color: #007da1;
+}
+
+.viewHeader h3 {
+    color: #007da1;
+}
+
+.portlet #loginBoxFull {
+    background: #fff;
+}
+
+/* @file page_components.css */
+#pageHeader, .pageTitle, .pageTitleSmall, #lightboxContent h2 {
+    background-color: #99dbef;
+    border-bottom: 1px solid #00a6d6;
+}
+
+.pageTitle, div#lightboxContent h2 {
+    border-bottom: 1px solid #00a6d6;
+}
+
+.helphelp, .pageTitle p {
+    color: #333;
+}
+
+.actionBar {
+    border-bottom: 1px solid #00a6d6;
+    background: #99dbef;
+}
+
+.topGlobalLinks ul {
+    padding: 0 3px 2px 3px;
+    z-index: 1001;
+    width: auto;
+    margin: 0 auto;
+    font-size: 85%;
+    float: right;
+}
+
+.topGlobalLinks a {
+    color: #000;
+}
+
+.loggedInAs {
+    background: transparent url('images/button_back.gif') repeat-x left center;
+}
+
+h2.navDivider {
+    border-top: 0;
+    margin: 4px 0 4px 0;
+    color: #00a6d6;
+}
+
+.additionalInfo a {
+    color: #333
+}
+
+.selected {
+    background: transparent url(../../../images/ci/ng/selected_ti.png) no-repeat 0 0;
+}
+
+.sliderWrapper {
+    border: 1px solid #007da1;
+    padding: 1px 6px 2px 0;
+    *padding: 7px 4px 7px 0; /*IE fix*/
+}
+
+.contextPath .contextArrow, .contextPath .contextArrowDown {
+    background-color: transparent;
+    border: 0;
+}
+
+/* @file palettes.css */
+.navPaletteContent, .navPalette .bottomRound b {
+    background: #00a6d6;
+    zoom: 1;
+}
+
+.navPalette h3, .navPalette .topRound b, .navPalette .bottomRound b,
+.navPaletteCol .topRound b, .navPaletteCol .bottomRound b, #courseMenuPalette .bottomRound b {
+    background: #00a6d6 !important;
+}
+
+.navPaletteContent a {
+    background: transparent url(images/indicators.png) no-repeat scroll 4px -743px;
+    color: #fff;
+}
+
+#myGroups .navPaletteContent a:hover,
+#myGroups .navPaletteContent a:focus,
+#myGroups .navPaletteContent a.comboLink_active,
+#myGroups .navPaletteContent a.open,
+#myGroups .navPaletteContent .submenu {
+    background-color: #99dbef;
+    color: #000;
+}
+
+.navPaletteContent a.submenuLink, .navPaletteContent a.submenuLink_active {
+    border-left: 1px dotted #fff;
+    background-position: center -293px;
+}
+
+.navPaletteContent h3 a:hover, .navPaletteContent h3 a:focus {
+    color: #fff;
+}
+
+.paletteGroup, .columnPalette {
+    border-bottom: 1px solid #efefef;
+}
+
+.navPaletteContent h3 a.submenuLink:hover, .navPaletteContent h3 a.submenuLink:focus {
+    background-color: transparent
+}
+
+.controlpanel h3, .controlpanel .topRound b {
+    background: #00a6d6;
+}
+
+.controlpanel .navPaletteContent, .controlpanel .bottomRound b {
+    background: #00a6d6;
+}
+
+.controlpanel a {
+    border-top-color: #fff;
+    color: #fff;
+}
+
+.controlpanel a.submenuLink, .controlpanel a.submenuLink_active {
+    border-color: #fff;
+    color: #000;
+}
+
+.controlpanel a:hover, .controlpanel a:focus, .controlpanel a.comboLink_active, .controlpanel a.open {
+    background-color: #99dbef;
+    color: #000;
+}
+
+#pickerPalette .topRound b {
+    background-color: #00a6d6
+}
+
+#pickerPalette.navPaletteCol b {
+    background-color: #00a6d6
+}
+
+.paletteSearch {
+    background-color: #00a6d6;
+    font-size: 95%;
+    padding: 6px 12px;
+    border-bottom: 1px solid #fff;
+}
+
+.listCm .courseMenu li {
+    margin: 0;
+    margin-left: -14px;
+    border-top: 1px solid #fff;
+}
+
+.listCm .courseMenu a {
+    color: #007da1;
+}
+
+.buttonCm .courseMenu a {
+    *margin: 0 0 0 14px;
+    white-space: nowrap;
+}
+
+.discover .topRound b, .discover .bottomRound b, .discover .navPaletteContent,
+.singleControl .topRound b, .singleControl .bottomRound b, .singleControl .navPaletteContent {
+    background-color: #00a6d6;
+}
+
+.singleControl a:hover, .discover a:hover, .singleControl a:hover,
+.singleControl a:focus, .singleControl a:focus, .discover a:focus {
+    background-color: #00a6d6;
+    background-image: none;
+}
+
+.navPaletteContent .submenu li a, h4#cs_search + ul div a {
+    color: #000;
+}
+
+.explore .submenu a {
+    color: #007da1;
+}
+
+.controlpanel .submenu a:hover, .controlpanel .submenu a.here,
+.controlpanel .submenu a:focus {
+    background: url(images/indicators.png) no-repeat 100% center transparent;
+}
+
+.tools .submenu a:hover, .submenu a:hover, .tools .submenu a:focus, .submenu a:focus, h4#cs_search + ul div a:hover,
+h4#cs_search + ul div a:focus {
+    background: #99dbef url(images/indicators.png) no-repeat 99% center;
+}
+
+.controlpanel .submenu, .controlpanel .submenu li ul {
+    background-color: #99dbef;
+}
+
+.paletteSearchElement {
+    border-top: 1px dotted #00a6d6;
+    margin-top: 3px;
+    padding: 6px 3px;
+}
+
+.listCm .topRound b, .buttonCm .topRound b, .treeViewCs .topRound b {
+    background-color: #99dbef;
+}
+
+.navPaletteCol .topRound b, .navPaletteCol .bottomRound b, #courseMenuPalette.navPaletteCol .bottomRound b,
+.navPaletteCol .controlpanelCol b, .controlpanel.navPaletteCol .topRound b {
+    background-color: #00a6d6 !important;
+}
+
+.shortcuts li a {
+    border-top: 1px solid #fff;
+    background: #00a6d6;
+}
+
+.shortcuts li a:hover, .shortcuts li a:focus {
+    background: #99dbef url(images/indicators.png) no-repeat 100% center;
+    color: #000;
+}
+
+div.treeContainer ul.tree li.subhead h4 a {
+    border-top: 1px solid #00A6D6;
+}
+
+#pickerPalette .tree, #pickerPalette .tree h4.treeSubhead-collapsed {
+    background: #99DBEF;
+}
+
+/* @file tabs.css */
+#topTab, .appTabs a {
+    padding: 0.4em 1.6em 0.6em 1.2em;
+    color: #fff;
+    background: url('images/tabs_bg.gif') top right no-repeat transparent;
+    border: 0;
+    border-left: 1px solid #00a6d6;
+}
+
+.appTabs a:hover, .appTabs a:focus {
+    color: #000;
+    background: url('images/tabs_bg_active.gif') top right no-repeat transparent;
+    border: 0;
+    border-left: 1px solid #00a6d6;
+}
+
+.appTabs .active a, .appTabs .active a:hover, .appTabs .active a:focus {
+    color: #00a6d6;
+    background: url('images/tabs_bg_active.gif') top right no-repeat transparent;
+    border: 0;
+    border-left: 1px solid #00a6d6;
+}
+
+#topTabActive, .appTabs .active a, .appTabs .active a:hover, .appTabs .active a:focus {
+    padding: 0.4em 1.6em 0.6em 1.2em;
+}
+
+.topTabs-compact .appTabs a, .topTabs-compact  .appTabs .active a:hover, .topTabs-compact  .appTabs .active a:focus {
+    color: #fff;
+    background: url('images/tabs_bg.gif') top right no-repeat transparent;
+    border: 0;
+    border-left: 1px solid #00a6d6;
+    font-size: 95%;
+}
+
+.topTabs-compact .appTabs a:hover, .topTabs-compact .appTabs a:focus {
+    color: #000;
+    background: url('images/tabs_bg_active.gif') top right no-repeat transparent;
+    border: 0;
+    border-left: 1px solid #00a6d6;
+}
+
+.topTabs-compact .appTabs .active a, .topTabs-compact .appTabs .active a:hover, .topTabs-compact .appTabs .active a:focus {
+    color: #00a6d6;
+    background: url('images/tabs_bg_active.gif') top right no-repeat transparent;
+    border: 0;
+    border-left: 1px solid #00a6d6;
+    padding: 0.3em 1.4em 0.2em 1em;
+}
+
+.round1 a {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -khtml-border-horizontal-spacing: 0;
+}
+
+.round2 a {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -khtml-border-horizontal-spacing: 0;
+}
+
+.containerTabs {
+    background: transparent
+}
+
+.paneTabs {
+    padding: 0px 4px;
+}
+
+.paneTabs ul {
+    border-bottom: 1px solid #00a6d6;
+}
+
+.paneTabs .active {
+    margin-bottom: -1px;
+}
+
+.paneTabs ul li a {
+    background: url('images/button2_back.gif') left center repeat-x #a5a5a5;
+    border-radius: 3px;
+    border: 1px solid #999;
+    color: #fff;
+}
+
+.paneTabs ul li a:hover {
+    background: #99dbef;
+}
+
+.paneTabs .active a, .paneTabs .active a:hover, .paneTabs .activepersonal a, .paneTabs .activepersonal a:hover, .paneTabs .active h3,
+.paneTabs .active a:hover, .paneTabs .active a:focus {
+    background: #99dbef;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 1px solid #00a6d6;
+    border-bottom: 0;
+}
+
+/**
+ * Blackboard 9.1 Service Pack 8 fixes.
+ */
+.brandingImgWrap img[src*="header_institution"] {
+    top: 0;
+}
+.dueDate {
+    color: #2d714d;
+}
+.dueDatePassed {
+    color: #bf1b17;
+}
+
+/**
+ * Fix some glitches in the styling.
+ */
+.contentListPlain .item a {
+    color: #00a6d6;
+    text-decoration: none;
+}
+.column-3 {
+    overflow: hidden;
+}
+#quickEnrollLink {
+    background-image: none;
+    text-align: left;
+}

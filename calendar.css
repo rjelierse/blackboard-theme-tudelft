@@ -1,0 +1,443 @@
+/*------------------------------------CALENDAR AND ANNOUNCEMENTS----------------------------------------*/
+
+/* ----------- Calendar Month styles are ready for implementation ------------ */
+div.calendarTitle, div.announcementTitle {
+	text-align:center;
+	margin:9px 0 0 0;
+}
+  
+  div.calendarTitle h3, div.announcementTitle h3 {
+    display:inline;
+    margin:0;
+    padding:2px 4px;
+    font-size:130%;
+    vertical-align:middle;
+  }
+
+/*Month View table*/
+div.calMonth {
+  display:block; 
+  margin:10px 4px 4px;
+  padding:2px 2px 6px;
+  overflow:auto;
+}
+
+  div.calMonth table {
+    margin:0 auto;
+    border:2px solid #A8BEDA; 
+    border-width:2px 2px 2px 1px;
+    *border-left:2px;
+    border-collapse:collapse;
+  }
+
+      div.calMonth table thead td,
+      div.calMonth table tbody th { /* these styles control the "week" column, which is hidden out of view */
+        width:1px;
+        padding:0;
+        background:#A8BEDA;
+      }
+    
+    div.calMonth table thead td div,
+    div.calMonth table tbody th div {
+      position:absolute;
+      top:0;
+      left:-1000px;
+    }
+    
+    div.calMonth table thead th {
+      border-right:1px solid #aaa; 
+      border-bottom:1px solid #a0a0a0; 
+      padding:2px;
+      width:8em; 
+      background:#DDDDDD url(images/backgrounds_h.png) repeat-x 0 -50px; 
+      color:#333; 
+      font-weight:bold; 
+      text-align:center;
+      overflow:hidden; 
+    }
+    
+    div.calMonth table tbody td {
+      border-right:1px solid #A8BEDA; 
+      border-bottom:1px solid #A8BEDA;
+      padding:0; 
+      background:white url(images/backgrounds_h.png) repeat-x 0 -400px; 
+      width:8em; 
+      height:8em;
+      overflow:hidden;
+    }
+    
+    div.calMonth table th:hover,
+    div.calMonth table th:focus,
+    div.calMonth table th:active {
+      background-color:#E3EFFF;
+    }
+    div.calMonth table td:hover,
+    div.calMonth table td:focus,
+    div.calMonth table td:active {
+      background:#E3EFFF url(images/backgrounds_h.png) repeat-x 0 -600px;
+	  -moz-box-shadow:1px 1px 4px rgba(0,0,0,0.2);
+	   -webkit-box-shadow:1px 1px 4px rgba(0,0,0,0.2);
+    }
+
+      div.calMonth table td a.daylink {
+        float:left;
+        border-right:1px solid #A8BEDA;
+        border-bottom:1px solid #A8BEDA;
+        padding:0.2em;
+        width:1.2em; 
+        background:#e3efff; 
+        display:block; 
+        text-align:center;
+        text-decoration:none;
+        font-weight:bold;
+        font-size:110%;
+      }
+
+      div.calMonth table td a.daylink:hover {background-color:#e3efff;}
+      
+        div.calMonth table td a.daylink span {
+          position:absolute;
+          top:0px;
+          left:-1000px;
+        }
+      
+    div.calMonth table td.today {background-color:#F9E091;}
+
+      div.calMonth table td.today a.daylink {font-weight:bold; background:#F9E091;}
+
+      div.calMonth table td.today a.daylink:hover {background:#F9E091 url(images/backgrounds_h.png) repeat-x 0 -50px;}
+
+    div.calMonth table td.offday, div.calMonth table td.offday:hover, div.calMonth table td.offday:focus {background:#eeeeee;-moz-box-shadow:none;-webkit-box-shadow:none;}
+    
+      /* this wrapper div and its width:expression solves an overflow:hidden bug in IE, so all calendar cells remain a uniform width  */
+      div.calMonth table td div {
+        overflow:hidden;
+        clear:both;
+        width:8em;
+      }
+
+        div.calMonth table td div ul {
+          margin:0;
+          padding:0 0.4em;
+          list-style-type:none; 
+        }
+        
+          div.calMonth table td div ul li {
+            margin:0; 
+            padding:1px 0;
+            font-size:90%;
+            white-space:nowrap;
+          }
+ 
+/* ------- end calendar month styles -------------- */
+
+/* calendar year styles */
+table.calYear {
+  position:relative;
+  margin:6px;
+  *border:1px solid #A8BEDA;
+  border-collapse:collapse;
+  /*width:100%;*/
+  font-size:95%; 
+  min-width:200px; 
+} 
+  
+  table.calYearFloat {
+    float:left; 
+    margin:6px .66%;
+    width:32%;
+  }
+  
+    table.calYear thead td,
+    table.calYear tbody th { /* these styles control the "week" column, which is hidden out of view */
+      position:absolute;
+      top:0px;
+      left:-10000px;
+    }
+    
+    table.calYear caption {
+      margin:0; 
+      padding:2px 2px 4px;
+      text-align:center;
+      font-size:108%;
+    }
+      table.calYear caption a {
+        font-weight:bold;
+        text-decoration:none;
+      }
+      table.calYear caption a:hover {text-decoration:underline;}
+      
+    table.calYear thead th {
+      border:1px solid #aaa; 
+      border-top:1px solid #A8BEDA;
+      border-bottom:1px solid #a0a0a0; 
+      padding:2px;
+      background:#ddd url(images/backgrounds_h.png) repeat-x 0 -50px;
+      width:23px;  
+      color:#333; 
+      font-weight:bold; 
+      text-align:center; 
+      vertical-align:top;
+    }
+    
+    table.calYear tbody td {
+      width:23px;  
+      background:white; 
+      border:1px solid #A8BEDA; 
+      padding:2px; 
+      text-align:right;
+      white-space:nowrap;
+    }
+      table.calYear td a {
+        display:block;
+        position:relative; 
+        text-decoration:none; 
+        width:100%; 
+      }
+        table.calYear td a img {
+          float:left;
+        }  
+
+    table.calYear td:hover,
+    table.calYear td:focus,
+    table.calYear td:active
+    /*,table.calYear td.offday:hover,
+    table.calYear td.offday:focus,
+    table.calYear td.offday:active*/ {
+      background:#E3EFFF  url(images/backgrounds_h.png) repeat-x 0 -50px;
+	    -moz-box-shadow:1px 1px 2px rgba(0,0,0,0.2);
+	   -webkit-box-shadow:1px 1px 2px rgba(0,0,0,0.2);
+    }
+  
+    table.calYear th:hover,
+    table.calYear th:focus, 
+    table.calYear th:active {
+      background-color:#ccc;
+      }
+  
+
+    table.calYear td.today,
+    table.calYear td.today:hover,
+    table.calYear td.today:focus {background:#F9E091;}
+    
+      table.calYear td.today a {font-weight:bold; color:black;}
+      
+      table.calYear td.today a:hover,
+      table.calYear td.today a:active,
+      table.calYear td.today a:focus {background-image:none;}
+    
+    table.calYear td.offday,  table.calYear td.offday:hover,  table.calYear td.offday:focus {
+      border:1px solid #A8BEDA; 
+      background:#eee;
+      color:#444444; 
+      text-decoration:none;
+	  -moz-box-shadow:none;
+	  -webkit-box-shadow:none;
+      } 
+      
+    table.calYear td.hasEvent {
+      background: url(images/backgrounds_h.png) 0 -50px repeat-x;
+      font-weight:bold;
+    }  
+
+/* end of calendar year styles */
+
+
+/* calendar day styles */
+
+table.calendarDay {
+	margin:10px 0 0 0;
+  border:1px solid #cdcdcd;
+  *border-top:none;
+  border-collapse:collapse;
+  width:100%;
+}
+table.calendarDay thead, table.calendarDay thead th {
+  position:absolute;
+  top:0px;
+  left:-1000px;
+  *height:1px;
+}
+ul.calendarWeek li table.calendarDay {
+  margin:0;
+  border:none; 
+}
+
+
+table.calendarDay tbody th {
+  border:1px solid #ccc;
+  padding:1px 12px 14px 3px;
+  background:#f3f3f3; 
+	width:6%;
+  font-weight:normal;
+  color:#555;
+  text-align:right;
+  vertical-align:top;
+}
+
+table.calendarDay tbody th:hover,
+table.calendarDay tbody th:focus,
+table.calendarDay tbody th:active {
+  background:#E6E5E5 url(images/backgrounds_h.png) repeat-x 0 -200px;
+
+}
+
+table.calendarDay tbody td {
+  border-top:1px solid #cdcdcd;
+  padding:0 12px 3px 0;
+  background:#fff;
+  vertical-align:top;
+}
+
+table.calendarDay tbody td.hasEvent {
+ padding-left:6px;
+/* background:url(images/cal_day_cell_bg.gif) repeat-y 0 0;*/
+}
+
+table.calendarDay tbody td.hasEvent a.jumpToEvent {position:absolute; left:-1000px; top:0;}
+
+table.calendarDay tbody tr.halfHour th,
+table.calendarDay tbody tr.halfHour td {border-top:1px solid #ededed;}
+
+table.calendarDay tbody tr.midday th,
+table.calendarDay tbody tr.midday td {border-top:2px solid #cdcdcd;}
+
+table.calendarDay tr.notBusinessHours th {
+  border:1px solid #ccc;
+  background:#f3f3f3;
+  }
+table.calendarDay tr.notBusinessHours td {background:#fafafa;}
+
+table.calendarDay tbody tr.notBusinessHours td.hasEvent {
+ background:#fafafa;
+}
+
+table.calendarDay tr th span.ampm {
+  position:relative;
+	top:-1.2em;
+  left:-4px;
+  *left:-4px;
+	padding:0 2px;
+  background:#bbb;
+	color:#fff;
+	font-size:75%;
+	letter-spacing:0.1em;
+}
+
+table.calendarDay tbody tr:hover {-moz-box-shadow:1px 1px 2px rgba(0,0,0,0.2);-webkit-box-shadow:1px 1px 2px rgba(0,0,0,0.2);}
+
+table.calendarDay tbody tr:hover th,
+table.calendarDay tbody tr:hover td,
+table.calendarDay tbody tr:focus th,
+table.calendarDay tbody tr:focus td,
+table.calendarDay tbody tr:active th,
+table.calendarDay tbody tr:active td {background-color:#f0f0f0;}
+
+table.calendarDay tbody tr:hover td.hasEvent,
+table.calendarDay tbody tr:focus td.hasEvent,
+table.calendarDay tbody tr:active td.hasEvent {background:#f0f0f0 /*url(images/cal_day_hover_bg.gif) repeat-y 0 0*/;}
+
+table.calendarDay td div div {
+  display:block;
+  float:left;
+  margin:0 4px 0 -6px;
+  padding:1px 3px;
+  background:#B5CCEA;
+  font-weight:normal;
+  font-size:90%;
+  *font-size:85%;
+  }
+  
+table.calendarDay td div div.contextMenuContainer {
+  display:inline;
+  float:none;
+  margin:0 0 0 -3px;
+  padding:0;
+  background:none;
+  }
+  
+table.calendarDay td div span {
+  color:#555; 
+  font-size:90%;
+}
+
+/* end calendar day styles */
+
+
+/* ------------------------ Calendar Week View, and Announcement lists. ------------------------- */
+
+ul.calendarWeek {
+	list-style:none;
+	border:1px solid #cdcdcd;
+	padding:0;
+	margin:10px 0 0 0;
+	*height:1%;
+}
+
+ul.calendarWeek li {
+	padding:0;
+	margin:0;
+	clear:both;
+	border-bottom:1px solid #cdcdcd;
+	position:relative;
+}
+
+ul.calendarWeek li ul:first-child, ul.calendarWeek ul li:first-child {border-top:none;}
+
+ul.calendarWeek li h3.weekDay {
+	margin:0;
+	padding:0.3em 0.6em 0.3em 0.6em;
+	font-size:110%;
+	color:#666;
+  background:#E3EFFF;
+	font-weight:bold;
+}
+
+ul.calendarWeek li h3.weekDay:hover,
+ul.calendarWeek li h3.weekDay:focus,
+ul.calendarWeek li h3.weekDay:active
+{background:#E3EFFF url(images/backgrounds_h.png) repeat-x 0 -200px;}
+
+ul.calendarWeek li ul {
+  margin:0 12px 6px;
+  padding:0;
+  list-style:none;
+}
+
+ul.calendarWeek li ul li {
+	border-top:1px solid #ededed;
+  border-bottom:none;
+  padding:6px 0 12px;
+}
+
+ul.calendarWeek li ul li:hover, 
+ul.calendarWeek li ul li:focus,
+ul.calendarWeek li ul li:active {
+  background: url(images/backgrounds_h.png) 0 -205px repeat-x;
+}
+
+ul.calendarWeek li ul li h4 {
+  float:left;
+  margin:0 12px 0 0;
+  padding:1px 3px;
+  width:10em;
+  color:#555;
+  font-weight:normal;
+  font-size:95%;
+}
+ul.calendarWeek li div {
+  margin-left:11em;
+}
+
+ul.calendarWeek li div.contextMenuContainer {
+  margin:0 0 0 -3px;
+}
+
+ul.calendarWeek li ul li span {
+  color:#555; 
+  font-size:90%;
+}
+
+/* ---------------------- end calendar week styles --------------------------------------- */
+
+.hidden {display:none;}

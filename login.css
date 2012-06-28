@@ -1,0 +1,112 @@
+/*
+ * LOGIN PAGE
+ */
+
+#loginPageContainer {
+  position: relative;
+  width: 728px;
+  min-height: 100%; /* For Modern Browsers */
+  height: auto !important; /* For Modern Browsers */
+  height: 100%; /* For IE */
+  margin: 0 auto;
+  text-align: left;
+}
+
+#loginPane {margin: 40px 0 20px;}
+
+#loginPane div.loginBack b {background: #94b3de;}
+
+#loginContainer {margin:0 auto; border:8px solid #94b3de; border-width: 4px 8px; background: #fff; zoom:1;}
+
+#loginHeader {background: #eee; font-size: 0.85em; color: #444;}
+
+#loginHeader img.productLogo {float: left; margin:12px 8px 0 20px; _width:60px; _height:58px;}
+
+#loginHeader ul {float: right; margin: 10px 0; }
+
+#loginHeader ul li {float: left;padding: 0 10px; border-left: 1px dotted #999;}
+#loginHeader ul li:first-child {border-left: none;}
+
+#loginHeader ul li :link .active {color: #666;text-decoration: none;}
+
+#loginLang {font-size: 0.85em; color: #444; margin: 0 auto; padding: 6px; background: #eee; clear: both;}
+
+#loginLang h2 {margin: 1em 0 0.1em 0;}
+#loginLang h3 {float: left; margin: 6px;}
+
+#loginLang ul {margin: 6px 0;}
+#loginLang ul li {float: left; margin: 0 0 2px 0; padding: 0 6px; border-left: 1px dotted #999; white-space: nowrap; min-height:1.45em;}
+#loginLang ul li:first-child {border-left: none;}
+
+#loginLang ul li :link .active {color: #666;text-decoration: none;}
+
+div.loginBody {background-color: #94b3de; border-top:1px solid #ccc; padding: 4px 0; *height:1%;}
+
+#loginBox {float: left; width: 49.5%; background: #fff1c5;}
+
+#loginBox h2 {margin: 10px;}
+
+#loginBox p {margin: 10px; font-size: 0.85em; color: #444;}
+
+#loginBox ul {margin: 6px 12px;}
+#loginBox li {padding: 2px 0;clear:both;}
+
+#loginBox li label {font-weight: bold; width: 90px; float: left; padding-right: 3px;}
+#loginBox li input {float: left;}
+
+#loginBox input[type="text"], #loginBox input[type="password"] {border-width: 2px;*width:160px}
+
+#loginBox .forgot {margin-left: 93px; font-size: 85%;}
+
+#loginBox li input[type="submit"] {margin-left: 93px;}
+#loginBox li input.submit {margin-left: 94px;}/*IE6*/
+
+#loginOptions {float: left; width: 49%; border-left:1px solid #ccc; padding-left:4px;}
+
+#loginOptions h2 {margin: 10px;}
+
+#loginOptions p {margin: 10px; font-size: 0.85em; color: #444;}
+
+#loginOptions ul li a, #loginOptions ul li.subOption a  {
+  display: block;
+  padding: 9px 12px 9px 24px;
+  background: #e3efff url(images/indicators.png) no-repeat  4px 13px;
+  font-size: 95%;
+  color: #52637b;
+  font-weight:bold;
+  text-decoration: none;
+}
+
+#loginOptions ul li.subOption a {border-top:1px dotted #aaa; _border-top-style:solid;}
+
+#loginOptions ul li a:hover, #loginOptions ul li.subOption a:hover, #loginOptions ul li a:focus, #loginOptions ul li.subOption a:focus {background-color: #b4cdeb; color: #000;}
+
+#loginText {padding: 12px 80px 18px 80px; background:#5f6062; border-top:1px solid #777; text-align:center}
+
+#loginText p span {font-weight:bold; font-size:105%; color:#fff;}
+
+#loginText p {margin: 0; font-size: 95%;color: #ededed;}
+
+#loginImage {text-align: center;background-color:#fff;padding:0;}
+
+#loginImage img {margin: 0 auto; *padding:0; *margin-top:-1px;}
+
+#loginAnnouncements {clear: both; background: #ddd; padding:0 0 7px 0; border-top:1px solid #eee; }
+
+#loginAnnouncements h3 {margin: 0 9px 0 9px; padding: 6px 3px; font-size:110%; color:#555; border-bottom:1px solid #bbb;}
+
+#loginAnnouncements ul {margin: 0 9px 0px 9px; padding: 1px 12px  8px 12px; background:#ebebeb; list-style-image: url(/images/ci/ng/list_bullet_single.gif);}
+#loginAnnouncements ul li {margin: 5px 5px 5px 15px;padding: 4px 0 0 0; font-size:90%; border-top:1px dotted #999;}
+
+#loginAnnouncements ul li:first-child {border-top:0;}
+
+#loginAnnouncements ul li a {font-size: 95%;color: #495a71;}
+
+#loginRedirectProviders { border-top: 1px solid #ddd0a3; }
+#loginRedirectProviders h3 {margin: 10px;}
+#loginRedirectProviderList li {display: inline-block; margin: 0 10px 5px 0; }
+#loginRedirectProviderList li img { width: 16px; height: 16px; }
+
+/*
+ * END LOGIN PAGE
+ */

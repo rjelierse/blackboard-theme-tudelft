@@ -1,0 +1,76 @@
+/*
+
+BEGIN BB LEARN THEME
+
+*/
+
+/*---Do not edit stylesheets below this line unless necessary.---*/
+
+/*Setting theme defaults*/
+@import url("theme_defaults.css");
+/*Layout (holds together application layout panes)*/
+@import url("layout.css");
+
+/*---Do not edit stylesheets above this line unless necessary.---*/
+/*Utilities (frequently used attributes, fixes for browser rendering bugs)*/
+@import url("utilities.css");
+
+/*---Elements---*/
+/*Controls*/
+@import url("controls.css");
+/*---End elements---*/
+
+/*---Components---*/
+/*Core page components*/
+@import url("page_components.css");
+/*Tabs*/
+@import url("tabs.css");
+/*Navigation Palettes*/
+@import url("palettes.css");
+/*Modules*/
+@import url("modules.css");
+/*Lists*/
+@import url("lists.css");
+/*Tables*/
+@import url("inventory_tables.css");
+/*Dynamic elements*/
+@import url("dynamic_elements.css");
+/*---End components---*/
+
+/*---Screen type-specific components and elements---*/
+/*Login*/
+@import url("login.css");
+/*Data collection*/
+@import url("data_collection.css");
+/*Calendar*/
+@import url("calendar.css");
+/*Blogs*/
+@import url("blogs.css");
+/*Gradebook*/
+@import url("gradebook.css");
+/*Reports*/
+@import url("reports.css");
+/*Assessments*/
+@import url("assessments.css");
+/*Discussions*/
+@import url("discussion_board.css");
+/*Course creation wizard*/
+@import url("wizard.css");
+/*Outcomes*/
+@import url("outcomes.css");
+/*Rubrics*/
+@import url("rubrics.css");
+/*---End screen type tweaks---*/
+
+/*Temporary*/
+@import url("temporary.css");
+
+/*Service Pack styles.*/
+@import url("sp8.css");
+
+/* TU Delft branding */
+@import url("tudelft.css");
+
+/*
+ * END BB LEARN THEME
+ */
