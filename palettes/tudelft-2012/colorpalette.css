@@ -72,73 +72,92 @@
   * Huisstijl TU navigatie
   *
   * Mimic the layout of the TU Delft navigation styling used in the corporate websites.
-  * Apply to all items in the left pane (Course Menu, Control Panel, Groups, etc.).
+  * Apply to all items in the left pane (navigation palettes and single items).
   */
-/* Course menu, Control panel, single control: header/footer*/
+/* Palette header/footer */
 .navPalette .topRound, .navPalette .bottomRound {
     display: none;
 }
-.listCm .actionBarMicro {
+.navPalette .actionBarMicro {
     padding-top: 4px;
     background: #00a6d6;
 }
-.controlpanel .navPaletteTitle h3,
-#myGroups_link,
-.listCm .navPaletteTitle h3 {
+/* Palette title */
+.navPalette .navPaletteTitle h3 {
     background-color: #000 !important;
 }
-/* Course menu, Control panel: menu items. */
-#controlPanelPalette_contents li,
-#myGroups_contents li,
-.listCm .courseMenu li {
+/* Collapsible palette title link */
+.navPalette .navPaletteTitle h3 a,
+.navPalette .navPaletteContent h4 a {
+    background-position: center -250px;
+    padding: 0.7em 15% 0.7em 6%;
+}
+.navPalette .navPaletteTitle h3 a:hover {
+    background-position: center -250px;
+}
+.singleControl .navPaletteContent a:hover,
+.navPalette .navPaletteContent h4 a:hover {
+    background: #00a6d6 center -250px;
+    color: #fff;
+    text-decoration: underline;
+}
+.navPalette .navPaletteContent h4 a.open,
+.navPalette .navPaletteContent h4 a.open:hover,
+.navPalette .navPaletteContent h4 a.comboLink_active:hover {
+    background: #99dbef center -250px;
+    color: #000;
+    text-decoration: none;
+}
+.navPalette .navPaletteTitle a.submenuLink,
+.navPalette .navPaletteTitle a.submenuLink_active,
+.navPalette .navPaletteContent a.submenuLink,
+.navPalette .navPaletteContent a.submenuLink_active {
+    background-position: center -288px;
+    border: 0;
+    padding: 0;
+}
+.navPalette .navPaletteTitle a.submenuLink img ,
+.navPalette .navPaletteTitle a.submenuLink_active img,
+.navPalette .navPaletteContent a.submenuLink img ,
+.navPalette .navPaletteContent a.submenuLink_active img {
+    height: 30px;
+}
+.navPalette .navPaletteTitle a.submenuLink:hover,
+.navPalette .navPaletteTitle a.submenuLink_active:hover,
+.navPalette .navPaletteContent a.submenuLink:hover,
+.navPalette .navPaletteContent a.submenuLink_active:hover {
+    border: 0;
+    background-position: center -138px;
+}
+/* Menu items */
+.navPalette .navPaletteContent li {
     border: 0;
     border-top: 1px solid #99dbef;
     padding: 0;
 }
-#controlPanelPalette_contents li:first-child,
-#myGroups_contents li:first-child,
-.listCm .courseMenu li:first-child {
+.navPalette .navPaletteContent li:first-child {
     border-top: 0;
 }
-#quickEnrollLink,
-#controlPanelPalette_contents li h4 a,
-#myGroups_contents li h4 a,
-.listCm .courseMenu li a {
+/* Sub-menu items */
+.navPalette .navPaletteContent .submenu li {
+    border-top: 0;
+}
+/* Palette item link */
+.singleControl .navPaletteContent a,
+.listCm .courseMenu li a,
+.controlpanel .navPaletteContent li h4 a,
+.tools .navPaletteContent li h4 a {
     padding: 0.7em 15% 0.7em 6%;
+    text-align: left;
 }
-/* Course menu, Control panel, Groups: header link */
-#controlPanelPalette_link,
-#courseMenu_link,
-#myGroups_link {
-    background-image: none;
-    padding: 0.7em 15% 0.7em 6%;
+.navPalette .navPaletteContent a {
+    border-top: 0;
 }
-#myGroups_link:hover {
-    color: #fff;
-}
-/* Course menu, Control panel, Groups: combo link */
-#courseMenu_combo,
-#controlPanelPalette_contents .submenuLink,
-#controlPanelPalette_contents .submenuLink_active,
-#myGroups_contents .submenuLink,
-#myGroups_contents .submenuLink_active {
-    border: 0;
-    background-position: center -286px;
-    padding-bottom: 0.9em;
-}
-#courseMenu_combo:hover,
-#controlPanelPalette_contents .submenuLink:hover,
-#controlPanelPalette_contents .submenuLink_active:hover,
-#myGroups_contents .submenuLink:hover,
-#myGroups_contents .submenuLink_active:hover {
-    border: 0;
-    background-position: center 14px;
-}
-/* Course menu: ribbon. */
+/* Course menu: ribbon */
 .listCm .courseMenu a.cmimg {
     top: 0.875em;
 }
-/* Course menu: menu items. */
+/* Course menu: draggable handles */
 .listCm .courseMenu li,
 .listCm .courseMenu li a {
     margin-left: 0;
@@ -149,26 +168,43 @@
 .ineditmode .listCm .courseMenu li a {
     margin-left: 14px;
 }
-/* Control panel: menu items. */
-#controlPanelPalette_contents a,
-#myGroups_contents a {
-    border-top: 0;
-}
-/* Control panel: parent menu items. */
-#controlPanelPalette_contents li h4 a,
-#myGroups_contents li h4 a {
-    background-image: none;
-}
-/* Control panel: child menu items. */
-#controlPanelPalette_contents .submenu li,
-#myGroups_contents .submenu li {
-    border-top: 0;
-}
-/* Remove 'course management'  label. */
+/* Remove 'course management'  label */
 h2.navDivider {
     display: none;
 }
-/* Left align 'Quick enroll' button. */
-#quickEnrollLink {
-    text-align: left;
+/* Tree structure */
+#pickerPalette .tree,
+#pickerPalette .tree h4.treeSubhead-collapsed {
+    background: #00a6d6;
+}
+#pickerPalette .tree h4 {
+    background: #99dbef;
+}
+#pickerPalette .tree h4 a {
+    background-position: center -250px;
+    padding: 0.7em 15% 0.7em 6%;
+    border-top: 0;
+}
+#pickerPalette .tree h4 a {
+    background-color: #99dbef !important; /* Override inline styles. */
+    color: #000 !important; /* Override inline styles. */
+}
+#pickerPalette .tree h4.treeSubhead-collapsed a {
+    background-color: #00a6d6 !important; /* Override inline styles. */
+    color: #fff !important; /* Override inline styles. */
+}
+#pickerPalette .tree h4.treeSubhead-collapsed a:hover {
+    text-decoration: underline;
+}
+#pickerPalette .tree li {
+    background: #99dbef;
+}
+#pickerPalette .tree li:first-child {
+    background: #99dbef;
+}
+#pickerPalette .tree li h4 + ul {
+    background: #99dbef;
+}
+#pickerPalette .tree li.subhead li {
+    border-top: 0;
 }
