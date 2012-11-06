@@ -33,12 +33,26 @@
     border-left: 2px solid #ccc;
 }
 /* Announcement information */
+#announcementList .item {
+    border-top: 0;
+    overflow: hidden;
+}
 .announcementList li .announcementInfo,
 #announcementList li .announcementInfo {
     border-left: 0;
     background: #fafafa;
     top: 0;
     bottom: 0;
+}
+#announcementList .item h3 {
+    float: left;
+}
+#announcementList .item .contextMenuContainer {
+    float: left;
+    margin-top: 8px;
+}
+#announcementList .item .reorder {
+    top: 0;
 }
 /* Modules */
 #moduleBody, #moduleBorder, .portlet {
@@ -66,6 +80,16 @@
 .portlet h3, #lightbox h3, .portlet div.portletBlock h4, .portlet div.blockContents h4, .flyout h3 {
     border-bottom: 1px solid #ccc;
     color: #00a6d6;;
+}
+.portlet .portletBlock {
+    border: 0;
+}
+.portlet .portletBlock h3 {
+    border-bottom: 0
+}
+.portlet .portletBlock .noItems {
+    padding: 6px;
+    text-align: left;
 }
 
 /**
@@ -207,18 +231,4 @@ h2.navDivider {
 }
 #pickerPalette .tree li.subhead li {
     border-top: 0;
-}
-
-/**
- * Portlets
- */
-.portlet .portletBlock {
-    border: 0;
-}
-.portlet .portletBlock h3 {
-    border-bottom: 0
-}
-.portlet .portletBlock .noItems {
-    padding: 6px;
-    text-align: left;
 }
