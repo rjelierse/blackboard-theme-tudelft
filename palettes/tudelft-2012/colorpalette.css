@@ -162,6 +162,23 @@ input.genericButton[type="submit"], input.button-1[type="submit"], .actionMenuBu
     background: #00a6d6 none;
 }
 
+/* Module manager */
+div.quickAddPal, div.keyboardAccess {
+    background: #fff none;
+    border: 1px solid #ccc;
+    padding: 2px;
+}
+.quickAddPal h3, .keyboardAccess h3, .quickAddPal .quickAddPalHeader {
+    background: none;
+    border-bottom: 1px solid #ccc;
+    margin: 0 0 8px;
+    padding: 4px;
+}
+.quickAddPal .controls, .keyboardAccess .controls, .comText .controls, .e_expandArea .controls {
+    border-top: 0;
+    padding: 7px 0 0;
+}
+
 /**
   * Huisstijl TU navigatie
   *
