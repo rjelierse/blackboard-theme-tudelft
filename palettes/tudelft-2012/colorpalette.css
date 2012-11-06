@@ -208,3 +208,17 @@ h2.navDivider {
 #pickerPalette .tree li.subhead li {
     border-top: 0;
 }
+
+/**
+ * Portlets
+ */
+.portlet .portletBlock {
+    border: 0;
+}
+.portlet .portletBlock h3 {
+    border-bottom: 0
+}
+.portlet .portletBlock .noItems {
+    padding: 6px;
+    text-align: left;
+}
