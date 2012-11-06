@@ -98,6 +98,70 @@
     border-top: 0;
 }
 
+/* Controls */
+#secondaryButton, .secondaryButton a, .button-2, .button-2-img,
+div.threadButtons a.browse, div.dbThreadInfo p a.browse,
+.backLink a,
+.paneTabs ul li a,
+.genericButton, .genericButtonImg, .browse, .browseIcon, input.genericButton[type="submit"], .rumble a, .rumble_top a,
+.paging a, .itemHeaderControl a, .actionMenuButton, .button-3, .button-3-img, .button-4, .button-4-img,
+.navPaletteContent ul li:first-child .paletteSearch .button-4, h3#cs_search + ul div.none:first-child .button-4,
+.treeContainer .tree li a.button-4-img, .controlpanel .submenu .button-4 {
+    background: #a5a5a5 none;
+    font-size: 100%;
+    color: #fff;
+    border: 0;
+    padding: 4px 9px;
+}
+.secondaryButton a:hover, .secondaryButton a:focus, .button-2:hover, .button-2:focus, .button-2-img:hover,
+.button-2-img:focus,
+div.threadButtons a.browse:hover, div.dbThreadInfo p a.browse:hover,
+.backLink a:hover, .backLink a:focus,
+.paneTabs ul li a:hover, .paneTabs ul li a:focus,
+input.submit[type="submit"]:hover, .mainButton a:hover, .mainButton a:focus, .actionBarMicro .mainButton a:hover,
+.actionBarMicro .mainButton a:focus, .rumble .mainButton > a:hover, .rumble_top .mainButton > a:hover,
+.rumble .mainButton > a:focus, .rumble_top .mainButton > a:focus, .button-1:hover, .button-1:focus, .button-1-img:hover,
+.button-1-img:focus, .genericButton:hover, .genericButtonImg:hover, .browse:hover, .browseIcon:hover,
+.genericButton:focus, .genericButtonImg:focus, .browse:focus, .browseIcon:focus,
+input.genericButton[type="submit"]:hover, input.genericButton[type="submit"]:focus, .rumble a:hover, .rumble a:focus,
+.rumble_top a:hover, .rumble_top a:focus, .paging a:hover, .paging a:focus, .itemHeaderControl a:hover,
+.itemHeaderControl a:focus, .actionMenuButton:hover, .actionMenuButton:focus, .button-3:hover, .button-3:focus,
+.button-4:hover, .button-4:focus, .button-3-img:hover, .button-3-img:focus, .button-4-img:hover, .button-4-img:focus,
+.navPaletteContent ul li:first-child .paletteSearch .button-4:hover,
+.navPaletteContent ul li:first-child .paletteSearch .button-4:focus,
+h3#cs_search + ul div.none:first-child .button-4:hover, h3#cs_search + ul div.none:first-child .button-4:focus,
+.treeContainer .tree li a.button-4-img:hover, .treeContainer .tree li a.button-4-img:focus,
+.controlpanel .submenu .button-4:hover, .controlpanel .submenu .button-4:focus {
+    background: #666;
+    border: 0;
+}
+#primaryButton, input[type="submit"].submit, .mainButton a, .actionBarMicro .mainButton a, .rumble .mainButton > a,
+.rumble_top .mainButton > a, .button-1, .button-1-img,
+div.threadButtons a.reply, div.dbThreadInfo p a.reply,
+div.quickAddPal .button-3, div.keyboardAccess .button-3 {
+    background: #00a6d6 none;
+    font-size: 100%;
+    color: #fff;
+    border: 0;
+    padding: 4px 9px;
+}
+input[type="submit"].submit:hover, .mainButton a:hover, .mainButton a:focus, .actionBarMicro .mainButton a:hover,
+.actionBarMicro .mainButton a:focus, .rumble .mainButton > a:hover, .rumble_top .mainButton > a:hover,
+.rumble .mainButton > a:focus, .rumble_top .mainButton > a:focus, .button-1:hover, .button-1:focus, .button-1-img:hover,
+.button-1-img:focus,
+div.threadButtons a.reply:hover, div.dbThreadInfo p a.reply:hover,
+div.quickAddPal .button-3:hover, div.keyboardAccess .button-3:hover,
+div.quickAddPal .button-3:focus, div.keyboardAccess .button-3:focus {
+    background: #0092c3;
+}
+input.genericButton, input.button-1, input.button-2, input.button-3, input.button-4, .browse,
+input.genericButton[type="submit"], input.button-1[type="submit"], .actionMenuButton {
+    padding: 4px 9px;
+}
+.loggedInAs {
+    background: #00a6d6 none;
+}
+
 /**
   * Huisstijl TU navigatie
   *
