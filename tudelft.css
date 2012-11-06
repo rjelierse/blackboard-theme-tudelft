@@ -948,3 +948,7 @@ div.treeContainer ul.tree li.subhead h4 a {
     background-image: none;
     text-align: left;
 }
+
+.portlet #loginPaneShort {
+    border: 0;
+}
