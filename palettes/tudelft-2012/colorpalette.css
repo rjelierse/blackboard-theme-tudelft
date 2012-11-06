@@ -101,6 +101,7 @@
 /* Controls */
 #secondaryButton, .secondaryButton a, .button-2, .button-2-img,
 div.threadButtons a.browse, div.dbThreadInfo p a.browse,
+.button-6,
 .backLink a,
 .paneTabs ul li a,
 .genericButton, .genericButtonImg, .browse, .browseIcon, input.genericButton[type="submit"], .rumble a, .rumble_top a,
@@ -116,6 +117,7 @@ div.threadButtons a.browse, div.dbThreadInfo p a.browse,
 .secondaryButton a:hover, .secondaryButton a:focus, .button-2:hover, .button-2:focus, .button-2-img:hover,
 .button-2-img:focus,
 div.threadButtons a.browse:hover, div.dbThreadInfo p a.browse:hover,
+.button-6:hover, .button-6:focus,
 .backLink a:hover, .backLink a:focus,
 .paneTabs ul li a:hover, .paneTabs ul li a:focus,
 input.submit[type="submit"]:hover, .mainButton a:hover, .mainButton a:focus, .actionBarMicro .mainButton a:hover,
@@ -158,6 +160,11 @@ input.genericButton, input.button-1, input.button-2, input.button-3, input.butto
 input.genericButton[type="submit"], input.button-1[type="submit"], .actionMenuButton {
     padding: 4px 9px;
 }
+.button-6 {
+    font-size: 90%;
+    padding: 1px 3px;
+}
+
 .loggedInAs {
     background: #00a6d6 none;
 }
