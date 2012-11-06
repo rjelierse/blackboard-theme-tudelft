@@ -92,7 +92,7 @@
 .portlet .portletList, .portlet .portletList-img, .portlet .eventList {margin:4px 4px 12px;}
 
 .portlet .portletList li {background:transparent url(images/indicators.png) no-repeat 3px -893px; padding:0 0  0 14px; margin:0 0 2px 0;}
-.portlet .blankPortletList li {background:transparent url(/images/spacer.gif) no-repeat 3px -893px; padding:0 0  0 14px; margin:0 0 2px 0;}
+.portlet .blankPortletList li {background:transparent none no-repeat 3px -893px; padding:0 0  0 14px; margin:0 0 2px 0;}
 
 
 .portlet .courseListing li > a {font-weight:bold}
