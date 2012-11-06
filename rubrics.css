@@ -97,8 +97,8 @@
   padding:  6px 12px;
   vertical-align: top;
   background: #ffffff; /* old browsers */
-  background: -moz-linear-gradient(top, #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff 100%); /* firefox */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f3f3f3), color-stop(51%,#ededed), color-stop(100%,#ffffff)); /* webkit */
+  background: -moz-linear-gradient(top, #ffffff 0%, #f3f3f3 50%, #ededed 100%); /* firefox */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f3f3f3), color-stop(100%,#ededed)); /* webkit */
   -moz-box-shadow: 1px 1px 3px rgba(0,0,0,.25);
   -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,.25);
   box-shadow: 1px 1px 3px rgba(0,0,0,.25);
@@ -121,10 +121,18 @@
 
 .rubricTable tbody th label, .rubricTable tbody th input, .rubricTable tbody th > span {font-weight:normal;}
 
-.rubricGradingTable .radioLabel
+.rubricGradingTable .rubricCellHeader
+{
+    padding: 0 0 6px;
+}
+
+.rubricGradingTable .radioLabel,
+.rubricGradingTable .selectedCell .radioLabel,
+.rubricGradingTable .selectedCell .rubricSelectedValue,
+.rubricGradingTable .selectedCell .rubricCellDescription
 {
   display: block;
-  padding:6px 0 6px 28px;
+  padding:6px 0 6px 30px;
 }
 
 .rubricGradingList .radioLabel
@@ -137,6 +145,8 @@
 .rubricGradingTable .rubricCellContainer
 {
   position:relative;
+  overflow: hidden;
+  min-height: 30px;
 }
 
 .rubricCellRadio
@@ -160,16 +170,16 @@
 
 .rubricGradingTable .feedback textarea
 {
-  width: 100%;
+  width: 99%;
 }
 
 .rubricGradingTable .selectedCell
 {
   background:#fff1c5 url(images/button_ok_ia.png) no-repeat 12px 12px;
   color:#000000;
-  -moz-box-shadow:inset 2px 2px 2px rgba(0,0,0,.3);
-  -webkit-box-shadow:inset 2px 2px 2px rgba(0,0,0,.3);
-  box-shadow:inset 2px 2px 2px rgba(0,0,0,.3);
+  -moz-box-shadow: 0 0 6px rgba(0,0,0,.3);
+  -webkit-box-shadow: 0 0 6px rgba(0,0,0,.3);
+  box-shadow: 0 0 6px rgba(0,0,0,.3);
 }
 
 .rubricGradingList .selectedCell
@@ -180,22 +190,22 @@
 .rubricGradingTable tbody td:hover
 {
   border-color: #999;
-  background: #e8f0fe; /* old browsers */
-  background: -moz-linear-gradient(top, #e8f0fe 0%, #D9E4F7 50%, #CFDDF5 51%, #e8f0fe 100%); /* firefox */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e8f0fe), color-stop(50%,#D9E4F7), color-stop(51%,#CFDDF5), color-stop(100%,#e8f0fe)); /* webkit */
+  background: #fff1c5; /* old browsers */
+  background: -moz-linear-gradient(top, #fff1c5 0%, #b5e0e8 100%); /* firefox */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff1c5), color-stop(100%,#b5e0e8)); /* webkit */
 }
 
 .rubricTable tbody td:hover
 {
   border: solid 1px #ccc;
   background: #ffffff; /* old browsers */
-  background: -moz-linear-gradient(top, #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff 100%); /* firefox */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f3f3f3), color-stop(51%,#ededed), color-stop(100%,#ffffff)); /* webkit */
+  background: -moz-linear-gradient(top, #ffffff 0%, #f3f3f3 50%, #ededed 100%); /* firefox */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f3f3f3), color-stop(100%,#ededed)); /* webkit */
 }
 
 .rubricGradingTable tbody .selectedCell:hover
 {
-  background: #e8f0fe url(images/button_ok_ia.png) no-repeat 12px 12px;
+  background: #fff1c5 url(images/button_ok_ia.png) no-repeat 12px 12px;
 }
 
 .rubricCriteriaHead {width:15%!important;}
@@ -225,7 +235,16 @@
 /* end rubric grid */
 
 /*rubric list*/
-.rubricGradingCell {
+.rubricSelectedValue {font-weight: bold; font-size: 130%; display: block;}
+.rangePercent {color:#666; font-size: 90%; font-weight: normal;}
+.selectedCell .rangeValue {padding: 6px 0 0; margin: 6px 0 0; border-top: 1px dashed #aaa;}
+
+.rubricControlContainer .containerTabs,
+.rubricControlContainer .contentAreaBlock {
+    margin: 0;
+}
+
+.rubricGradingList .rubricGradingCell {
   position: relative;
   margin: 1px 0;
   overflow: hidden;
@@ -280,7 +299,7 @@
 
 .rubricPopupContainer .rubricControlContainer
 {
-  margin-top: 10px;
+  margin: 0 0 10px;
 }
 
 .rubricPopupContainer .changeRubricContainer.onlyOne .pagelink.previous,
@@ -302,8 +321,9 @@
   display: inline;
 }
 
-.pointRangeView, .rubricGradingCell.selectedCell .pointRangeEdit {
+.rubricGradingTable .pointRangeView, .rubricGradingCell.selectedCell .pointRangeEdit {
   display: block;
+  font-weight: bold;
 }
 
 

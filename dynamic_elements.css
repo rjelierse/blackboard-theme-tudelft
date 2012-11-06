@@ -182,6 +182,7 @@ ul.nav li.sub:hover {position:relative;}
 ul.nav li.sub:hover, ul.nav li.sub:hover ul, .nav .sub:hover .flyout {*z-index:1010!important;zoom:1;}
 /*IE6 and IE7 hack forcing parent of the flyout down the z-index*/
 .topGlobalLinks .nav .sub {*z-index:1000!important; zoom:1; *height:1%;}
+.topGlobalLinks .nav .narrow a {width: 150px;}
 
 
 

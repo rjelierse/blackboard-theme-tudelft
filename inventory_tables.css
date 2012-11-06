@@ -567,7 +567,8 @@ td.removeCell span a img {opacity:0.3;filter:alpha(opacity=30);}
 .questionShell .correctAnswer {width:2%;}
 .questionShell .field {padding:0 15px;position:relative;width:95%;}
 .questionShell .field img {vertical-align:top;left:0;position:absolute;}
-.questionShell .vtbegenerated {*display:inline!important;width:95%;}
+.questionShell .field .vtbegenerated img {top: auto;left: auto;position: relative;}
+.questionShell .vtbegenerated {display:inline!important;width:95%;}
 .questionShell td.valueCell table .vtbegenerated {display:inline!important;}
 
 /* key:value table */

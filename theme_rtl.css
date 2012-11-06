@@ -2042,7 +2042,13 @@ div.collectionViewUnreadMessageBorder {margin-right: 30px;margin-left:0;}
 #rubricColSort li input {left:auto; right:0;}
 #reorderPanelControls{right:auto; left:0;}
 .rubricGradingTable, .rubricTable {margin:0 -9px 0 0;}
-.rubricGradingTable .radioLabel, .rubricGradingTable .selectedCell .description {padding:6px 28px 6px 0;}
+.rubricGradingTable .radioLabel,
+.rubricGradingTable .selectedCell .radioLabel,
+.rubricGradingTable .selectedCell .rubricSelectedValue,
+.rubricGradingTable .selectedCell .description,
+.rubricGradingTable .selectedCell .rubricCellDescription {
+    padding:6px 28px 6px 0;
+}
 .rubricGradingTable .selectedCell, .rubricGradingTable tbody .selectedCell:hover {background-position: 95% 12px;}
 .rubricGradingList h4 span {right: auto; left:0;}
 .alignmentPanel ul.nav span {padding: 0 3px 0 0;}
@@ -2595,75 +2601,7 @@ ul.nav li.sub .slideoutOpen ul {
     margin: 55px 0px 0px 20px;
 }
 
-/*VTBE-Specific RTL Styles*/
-.defaultSkin table,.defaultSkin tbody,.defaultSkin a,.defaultSkin img,.defaultSkin tr,.defaultSkin div,.defaultSkin td,.defaultSkin iframe,.defaultSkin span,.defaultSkin *,.defaultSkin .mceText
-{
-	direction: rtl !important;
-	text-align: right !important;
+.mceToolbarRow6 {
+    left: 2px !important;
+    right: auto !important;
 }
-
-.mceToolbarRow6{
-	left: -6px !important;
-	right: auto !important;
-}
-
-.defaultSkin table {
-	direction: rtl !important;
-}
-
-.defaultSkin table.mceToolbar
-{
-	margin-left: 6px !important;
-	margin-right: 6px !important;
-	direction: rtl !important;
-}
-
-.defaultSkin .mceListBox .mceText{
-	border-left: none !important;
-	border-right: 1px solid #999!important;
-	padding: 0 7px 0 1px !important;
-}
-
-.defaultSkin .mceListBox .mceOpen{
-	border-right: none!important;
-	border-left: 1px solid #999!important;
-}
-
-.defaultSkin .mceMenu{
-	padding-left: 7px !important;
-	background-color: #F3F3F3;
-}
-
-.defaultSkin .mceSplitButton{
-	direction: rtl !important;
-}
-.defaultSkin .mce_backcolor span.mceAction,
-.defaultSkin .mce_forecolor span.mceAction
-{
-	left: auto!important;
-	right: 2px!important;
-}
-.defaultSkin .mceColorPreview
-{
-	left: auto!important;
-	right: 3px !important;
-}
-
-.defaultSkin .mceNoIcons a .mceText{
-	padding-left: auto !important;
-	padding-right:10px !important;
-}
-
-.defaultSkin td.mceRight table{
-	margin: 0 6px  !important
-}
-
-.mceMenuItem{
-	padding-left: 10px !important;
-}
-
-.defaultSkin .mceIframeContainer{
-	direction: rtl !important;
-}
-
-/*VTBE-Specific RTL Styles*/
