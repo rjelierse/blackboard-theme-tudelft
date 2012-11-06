@@ -169,6 +169,23 @@ input.genericButton[type="submit"], input.button-1[type="submit"], .actionMenuBu
     background: #00a6d6 none;
 }
 
+/* Tabs */
+.paneTabs ul li a {
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+}
+.paneTabs .active {
+    margin-bottom: -2px;
+}
+.paneTabs .active a, .paneTabs .active a:hover, .paneTabs .activepersonal a, .paneTabs .activepersonal a:hover,
+.paneTabs .active h3, .paneTabs .active a:hover, .paneTabs .active a:focus {
+    padding: 6px 12px 5px;
+}
+.actionBar {
+    border: 1px solid #00a6d6;
+}
+
 /* Module manager */
 div.quickAddPal, div.keyboardAccess {
     background: #fff none;
