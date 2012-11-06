@@ -67,6 +67,12 @@
     border-bottom: 1px solid #ccc;
     color: #00a6d6;;
 }
+.portlet.noTitle h2 {
+    display: none;
+}
+.portlet.noTitle .collapsible {
+    border-top: 0;
+}
 
 /**
   * Huisstijl TU navigatie
