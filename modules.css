@@ -43,7 +43,7 @@
 /*Located in the portlet header. */
 .edit_controls {position:absolute; right:4px; top:0px; height:20px; padding:0px 0px 0 4px; *top:2px; z-index: 1; }
 
-.edit_controls a {margin-left:1px; verical-align:top; opacity:0.6!important; padding:0;background-image:none!important; text-decoration:none;}
+.edit_controls a {margin-left:1px; vertical-align:top; opacity:0.6!important; padding:0;background-image:none!important; text-decoration:none;}
 .edit_controls a:hover {opacity:1!important;}
 
 /* Collapsible area of the portlet. Holds all the content. */
