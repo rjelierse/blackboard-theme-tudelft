@@ -134,7 +134,7 @@ input.genericButton[type="submit"]:hover, input.genericButton[type="submit"]:foc
 h3#cs_search + ul div.none:first-child .button-4:hover, h3#cs_search + ul div.none:first-child .button-4:focus,
 .treeContainer .tree li a.button-4-img:hover, .treeContainer .tree li a.button-4-img:focus,
 .controlpanel .submenu .button-4:hover, .controlpanel .submenu .button-4:focus {
-    background: #666;
+    background: #666 none;
     border: 0;
 }
 #primaryButton, input[type="submit"].submit, .mainButton a, .actionBarMicro .mainButton a, .rumble .mainButton > a,
@@ -163,6 +163,18 @@ input.genericButton[type="submit"], input.button-1[type="submit"], .actionMenuBu
 .button-6 {
     font-size: 90%;
     padding: 1px 3px;
+}
+
+.actionMenuButton {
+    padding-right: 20px;
+    background: #a5a5a5 url('../../themes/tud_learn/images/dropdown_white.png') center right no-repeat;
+}
+.actionMenuButton:hover {
+    padding-right: 20px;
+    background: #a5a5a5 url('../../themes/tud_learn/images/dropdown_white.png') center right no-repeat;
+}
+.actionMenuButton img {
+    display: none;
 }
 
 .loggedInAs {
