@@ -6,6 +6,7 @@
 #contentPanel .bottomRound {
     display: none;
 }
+#content, .contentBox,
 #contentArea, #schemePreviewBody,
 #contentPanel .container,
 #contentPanel .pageTitle,
