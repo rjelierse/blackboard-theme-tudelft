@@ -279,6 +279,11 @@ body.ineditmode {
     background: #cdcdcd none;
 }
 
+#actionbarlrn_std_doc.actionBar > ul > li > a {
+    color: #666;
+    text-shadow: none;
+}
+
 /**
   * Huisstijl TU navigatie
   *
