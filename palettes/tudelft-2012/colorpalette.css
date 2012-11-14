@@ -300,22 +300,22 @@ body.ineditmode {
 /* Collapsible palette title link */
 .navPalette .navPaletteTitle h3 a,
 .navPalette .navPaletteContent h4 a {
-    background-position: center -250px;
+    background-position: -100px -250px;
     padding: 0.7em 15% 0.7em 6%;
 }
 .navPalette .navPaletteTitle h3 a:hover {
-    background-position: center -250px;
+    background-position: -100px -250px;
 }
 .singleControl .navPaletteContent a:hover,
 .navPalette .navPaletteContent h4 a:hover {
-    background: #00a6d6 center -250px;
+    background: #00a6d6 -100px -250px;
     color: #fff;
     text-decoration: underline;
 }
 .navPalette .navPaletteContent h4 a.open,
 .navPalette .navPaletteContent h4 a.open:hover,
 .navPalette .navPaletteContent h4 a.comboLink_active:hover {
-    background: #99dbef center -250px;
+    background: #99dbef -100px -250px;
     color: #000;
     text-decoration: none;
 }
