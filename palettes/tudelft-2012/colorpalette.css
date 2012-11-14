@@ -181,6 +181,35 @@ input.genericButton[type="submit"], input.button-1[type="submit"], .actionMenuBu
     background: #00a6d6 none;
 }
 
+/* Pager */
+#listContainer .inventory_paging .pagelink {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: #a5a5a5 url('../../themes/tud_learn/images/small_arrows_white.png') no-repeat;
+}
+#listContainer .inventory_paging .pagelink:hover {
+    background: #666 url('../../themes/tud_learn/images/small_arrows_white.png') no-repeat;
+}
+#listContainer .inventory_paging .pagelink img {
+    display: none;
+}
+#listContainer_currentpage_top, #listContainer_currentpage_bot {
+    color: #666;
+}
+#listContainer_firstpage_top, #listContainer_firstpage_bot {
+    background-position: center -239px;
+}
+#listContainer_prevpage_top, #listContainer_prevpage_bot {
+    background-position: center -289px;
+}
+#listContainer_nextpage_top, #listContainer_nextpage_bot {
+    background-position: center -189px;
+}
+#listContainer_lastpage_top, #listContainer_lastpage_bot {
+    background-position: center -139px;
+}
+
 /* Tabs */
 .paneTabs ul li a {
     border-radius: 0;
