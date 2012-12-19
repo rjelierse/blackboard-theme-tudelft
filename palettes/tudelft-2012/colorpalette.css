@@ -30,6 +30,9 @@
 .contentList .item {
     border-top: 0;
 }
+.contentListPlain .item > h3 > a {
+    text-decoration: underline;
+}
 .buildList div.details {
     border-left: 2px solid #ccc;
 }
@@ -210,39 +213,31 @@ input.genericButton[type="submit"], input.button-1[type="submit"], .actionMenuBu
 }
 
 /* Pager */
-#listContainer .inventory_paging .pagelink,
-#moduleList .inventory_paging .pagelink {
+ul.nav .inventory_paging .pagelink {
     display: inline-block;
     width: 22px;
     height: 22px;
     background: #a5a5a5 url('../../themes/tud_learn/images/small_arrows_white.png') no-repeat;
 }
-#listContainer .inventory_paging .pagelink:hover,
-#moduleList .inventory_paging .pagelink:hover {
+ul.nav .inventory_paging .pagelink:hover {
     background: #666 url('../../themes/tud_learn/images/small_arrows_white.png') no-repeat;
 }
-#listContainer .inventory_paging .pagelink img,
-#moduleList .inventory_paging .pagelink img {
+ul.nav .inventory_paging .pagelink img {
     display: none;
 }
-#listContainer_currentpage_top, #listContainer_currentpage_bot,
-#content_listContainer_currentpage_top, #content_listContainer_currentpage_bot {
+ul.nav .inventory_paging a.jumpToPageOpen {
     color: #666;
 }
-#listContainer_firstpage_top, #listContainer_firstpage_bot,
-#content_listContainer_firstpage_top, #content_listContainer_firstpage_bot {
+ul.nav .inventory_paging a[id*="firstpage"] {
     background-position: center -239px !important;
 }
-#listContainer_prevpage_top, #listContainer_prevpage_bot,
-#content_listContainer_prevpage_top, #content_listContainer_prevpage_bot {
+ul.nav .inventory_paging a[id*="prevpage"] {
     background-position: center -289px !important;
 }
-#listContainer_nextpage_top, #listContainer_nextpage_bot,
-#content_listContainer_nextpage_top, #content_listContainer_nextpage_bot {
+ul.nav .inventory_paging a[id*="nextpage"] {
     background-position: center -189px !important;
 }
-#listContainer_lastpage_top, #listContainer_lastpage_bot,
-#content_listContainer_lastpage_top, #content_listContainer_lastpage_bot {
+ul.nav .inventory_paging a[id*="lastpage"] {
     background-position: center -139px !important;
 }
 
