@@ -1,12 +1,21 @@
-all: palettes theme
+export distdir := $(shell pwd)/dist
 
-palettes: tudelft_2010 tudelft_2012
+colorpalettes = \
+	tud_learn_2010 \
+	tud_learn_2012
 
-theme:
-	zip dist/tudelft-theme.zip *.css theme.properties images/*
+all: prereq tud_learn $(colorpalettes)
 
-tudelft_2010: palettes/tudelft-2010/colorpalette.css palettes/tudelft-2010/colorpalette.properties
-	zip dist/tudelft-colorpalette-2010.zip palettes/tudelft-2010/colorpalette.*
+.PHONY: all prereq clean
 
-tudelft_2012: palettes/tudelft-2012/colorpalette.css palettes/tudelft-2012/colorpalette.properties
-	zip dist/tudelft-colorpalette-2012.zip palettes/tudelft-2012/colorpalette.*
+prereq:
+	mkdir -p "$(distdir)"
+
+clean:
+	rm -rf "$(distdir)"
+
+tud_learn: 
+	zip "$(distdir)/theme-tud_learn.zip" *.css theme.properties images/*
+
+$(colorpalettes):
+	$(MAKE) -C colorpalettes/$@ name=$@
