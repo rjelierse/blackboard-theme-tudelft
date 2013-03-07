@@ -4,7 +4,7 @@
 
 @import url("core.css");
 
-@import url("theme_specific.css");
+@import url("tudelft_specific.css");
 
 @import url("assessment.css");
 @import url("gradebook.css");
@@ -19,4 +19,4 @@
 
 @import url("external.css");
 
-@import url("tudelft_specific.css");
+@import url("tudelft_extra.css");
