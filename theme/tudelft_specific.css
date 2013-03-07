@@ -1,0 +1,13 @@
+/*
+ * TU  Delft styling overrides.
+ *
+ * Transform Blackboard styling to a flattened layout (it's 2013!).
+ */
+
+body {
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+a {
+    color: #00a6d6;
+}
