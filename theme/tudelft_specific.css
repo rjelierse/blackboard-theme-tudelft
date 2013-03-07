@@ -28,3 +28,22 @@ body.csMenuFrame, body.popupMenu {
     box-shadow: none;
     background: none;
 }
+
+/*
+ * Breadcrumb and contained elements.
+ */
+.breadcrumbs {
+    border: 0;
+    background: #fff none;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+    .breadcrumbs .theme-switch-wrapper {
+        display: none;
+    }
+
+    .breadcrumbs .path .root {
+        border: 0;
+    }
