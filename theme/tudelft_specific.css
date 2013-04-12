@@ -210,7 +210,7 @@ body.picker .locationPane {
 }
 
 #puller.pullcollapsed a {
-    background-color: #00a6d6;
+    background-color: #00c4f5;
     opacity: 1;
     filter: alpha(opacity=100);
 }
@@ -248,6 +248,11 @@ body.picker .locationPane {
 #puller.pullcollapsed a:hover:after, #puller a:hover:after,
 #puller.pullcollapsed a:focus:after, #puller a:focus:after {
     opacity: 1;
+}
+
+#puller.pullcollapsed a:hover:after,
+#puller.pullcollapsed a:focus:after {
+    background-color: #00c4f5;
 }
 
 #puller.pullcollapsed a:hover img,
@@ -304,9 +309,12 @@ body.picker .locationPane {
     max-height: 35px;
 
 }
+.topTabs-compact .brandingImgWrap {
+    float: left;
+}
 
 .topTabs-compact .bannerImage, .topTabs-compact .brandingImgWrap, .topTabs-compact .hotItems {
-    display: none;
+    display: block;
 }
 
 .topTabs {
@@ -783,8 +791,8 @@ body.picker .locationPane {
 }
 
 .containerOptions .searchbar, .containerOptions .liveArea, #addFolderForm {
-    background: #DFDFDF;
-    border: solid #CCCCCC;
+    background: #fff;
+    border: solid #ccc;
     border-width: 1px 0;
     margin: 0;
     padding: 12px 21px;
@@ -1691,6 +1699,13 @@ input[type="submit"].submit:focus,
     padding-left: 18px;
 }
 
+.actionBarMicro li.secondaryButton > a:hover,
+.actionBarMicro li.secondaryButton.active > a {
+    background-image: none;
+    background: #00a6d6;
+    color: #fff !important;
+}
+
 /* @end ACTION BAR BUTTONS*/
 
 /* @group BUTTONS 3-6 / GENERIC
@@ -1837,7 +1852,7 @@ input.button-3.disabled, input.button-3.disabled:hover, input.button-3.disabled:
 .mainButton a.disabled:hover, .secondaryButton a.disabled:hover,
 .mainButton a.disabled:focus, .secondaryButton a.disabled:focus {
     background: transparent;
-    color: #999;
+    color: #999 !important;
     cursor: not-allowed;
 }
 
@@ -1964,7 +1979,7 @@ input#width, input#height, select#border, select#controls,
 
 .actionBarMicro #quickViewLink a:hover span, .actionBarMicro #quickViewLink.active a span,
 .actionBarMicro #shortcutView a:hover span, .actionBarMicro #shortcutView.active a span {
-    background-position: 0 -16px;
+    background-position: 0 -32px;
 }
 
 .actionBarMicro #addCmItem > a span {
@@ -1976,7 +1991,7 @@ input#width, input#height, select#border, select#controls,
 }
 
 .actionBarMicro #addCmItem:hover > a span, .actionBarMicro #addCmItem.active > a span {
-    background-position: -16px -16px;
+    background-position: -16px 0;
 }
 
 .actionBarMicro #detailViewLink a span, .actionBarMicro #detailViewLink2 a span,
@@ -1987,7 +2002,7 @@ input#width, input#height, select#border, select#controls,
 .actionBarMicro #detailViewLink a:hover span, .actionBarMicro #detailViewLink2 a:hover span,
 .actionBarMicro #detailViewLink.active a span, .actionBarMicro #detailViewLink2.active a span,
 .actionBarMicro #folderView a:hover span, .actionBarMicro #folderView.active a span {
-    background-position: -32px -16px;
+    background-position: -32px -32px;
 }
 
 .actionBarMicro #courseMapButton a span {
@@ -1995,7 +2010,7 @@ input#width, input#height, select#border, select#controls,
 }
 
 .actionBarMicro #courseMapButton a:hover span, .actionBarMicro #courseMapButton.active a span {
-    background-position: -48px -16px;
+    background-position: -48px -32px;
 }
 
 .actionBarMicro #refreshMenuLink a span, .actionBarMicro #refreshView a span {
@@ -2004,7 +2019,7 @@ input#width, input#height, select#border, select#controls,
 
 .actionBarMicro #refreshMenuLink a:hover span, .actionBarMicro #refreshMenuLink.active a span,
 .actionBarMicro #refreshView a:hover span, .actionBarMicro #refreshView.active a span {
-    background-position: -64px -16px;
+    background-position: -64px -32px;
 }
 
 a.access-reorder span {
@@ -2012,7 +2027,7 @@ a.access-reorder span {
 }
 
 a.access-reorder:hover span, a.access-reorder.active span {
-    background-position: -80px -16px;
+    background-position: -80px -32px;
 }
 
 .actionBar .sub a .chevron {
@@ -2020,7 +2035,7 @@ a.access-reorder:hover span, a.access-reorder.active span {
 }
 
 .actionBar .sub:hover a .chevron, .actionBar .sub a:focus .chevron {
-    background-position: -95px -16px;
+    background-position: -95px -32px;
 }
 
 .actionBarMicro .active > a, .actionBarMicro .active > a:hover, .actionBarMicro .active > a:focus {
@@ -2239,8 +2254,8 @@ a.read-on .hideoff, a.read-off .hideoff {
 .vtbeSwitch div.modeSwitchWrap {
     right: 0;
     top: 2px;
-    background-color: #eeeeee;
-    border: 1px solid #CCCCCC;
+    background-color: #e0e0e0;
+    border: 1px solid #999;
     border-bottom: 0;
     padding: 6px 12px;
 }
@@ -2286,12 +2301,13 @@ table.vtbeTable-legacy {
 
 .helpLink a.browseIcon {
     display: inline-block;
-    background: #777;
+    background: #666;
     border: 0;
     position: relative;
     padding: 1px 1px 0;
     font-size: 115%;
     text-align: center;
+    top: -1px;
 }
 
 #helpTextToggleLink {
@@ -2304,7 +2320,7 @@ table.vtbeTable-legacy {
 
 .helpLink a.browseIcon:before {
     content: "?";
-    color: #FFF;
+    color: #fff;
     display: inline-block;
     z-index: 1;
     height: 18px;
@@ -2315,17 +2331,17 @@ table.vtbeTable-legacy {
 }
 
 .helpLink a[title*="Off"].browseIcon:hover {
-    background: #bbb;
+    background: #ccc;
 }
 
 .helpLink a[title*="Off"], .helpLink a[title*="Off"]:hover, .helpLink a[title*="Off"]:focus {
     text-decoration: line-through !important;
-    background: none repeat scroll 0 0 #CCCCCC;
-    color: #999;
+    background: none repeat scroll 0 0 #ccc;
+    color: #333;
 }
 
 .helpLink a[title*="Off"]:before, .helpLink a[title*="Off"]:hover:before, .helpLink a[title*="Off"]:focus:before {
-    color: #999;
+    color: #333;
     text-decoration: line-through;
 }
 
@@ -2397,7 +2413,7 @@ table.reorder span {
 
 /* Portal module reorder handle.*/
 .portlet .reorder {
-    border: 1px solid #555;
+    border: solid #666;
     border-width: 1px 0 1px 1px;
     bottom: -1px;
     left: -19px;
@@ -2586,7 +2602,7 @@ a.close-menu:before {
 }
 
 a.close:hover:before, a.close-menu:hover:before, .lbAction:hover:before {
-    color: #888;
+    color: #999;
 }
 
 .builderItem a.close {
@@ -2751,13 +2767,13 @@ a.cancel {
 }
 
 .backLink a {
-    background: #EEEEEE;
-    color: #888888;
+    background: #ccc;
+    color: #333;
     display: inline-block;
     font-weight: bold;
     padding: 8px 18px 8px 12px;
     text-decoration: none;
-    border: 1px solid #cdcdcd;
+    border: solid #bbb;
     border-width: 1px 0 0 1px;
 }
 
@@ -2769,16 +2785,16 @@ a.cancel {
     content: "\2190"; /*left arrow*/
     font-size: 120%;
     line-height: 1.2;
-    color: #999;
+    color: #333;
 }
 
 .backLink a:hover {
-    background: #ddd;
-    color: #777;
+    background: #e0e0e0;
+    color: #000;
 }
 
 .backLink a:hover:before {
-    color: #00add0
+    color: #000;
 }
 
 /* @end BACK LINK */
@@ -2792,13 +2808,12 @@ a.cancel {
     font-size: 85%;
     background: #fff;
     position: relative;
-    border-bottom: 1px solid #ddd;
-
+    border-bottom: 1px solid #ccc;
 }
 
 #sliderHandle {
-    background: #999999;
-    border: 1px solid #555555;
+    background: #666;
+    border: 1px solid #333;
     cursor: ew-resize;
     display: block;
     height: 4px;
@@ -2807,8 +2822,8 @@ a.cancel {
 }
 
 #sliderTrack {
-    background: #EDEDED;
-    border: 1px solid #CCCCCC;
+    background: #e0e0e0;
+    border: 1px solid #ccc;
     display: inline-block;
     height: 2px;
     margin: 0 0 0 6px;
@@ -2822,11 +2837,11 @@ a.cancel {
 /* @group COUNTER */
 
 .itemCounter {
-    background: #cdcdcd;
+    background: #e0e0e0;
     padding: 1px 4px;
     font-size: 115%;
     text-align: center;
-    border: 1px solid #bbb;
+    border: 1px solid #ccc;
 }
 
 /* @end COUNTER*/
@@ -2856,7 +2871,7 @@ a.cancel {
     padding: 0;
     margin: 0;
     line-height: 1;
-    color: #000000;
+    color: #333;
 }
 
 #pageHeader,
@@ -2946,7 +2961,7 @@ a.cancel {
 /*@branding -- do not remove*/
 #pageHeader,
 #schemePreviewHead {
-    background-color: #dedede
+    background-color: #fff
 }
 
 .pageTitleIcon {
@@ -6781,7 +6796,7 @@ ul#tocTree span {
     zoom: 1;
     padding: 0;
     text-align: right;
-    background: #eee;
+    background: #fff;
 }
 
 .filePickerWidget .localViewToggle {
@@ -6819,11 +6834,11 @@ ul#tocTree span {
 }
 
 .localViewToggle a.active, div.localViewToggle h2 {
-    font-weight: bold;
+    font-weight: normal;
     margin: 0;
     color: #333;
-    background: #FFF;
-    border: 1px solid #ddd;
+    background: #fff;
+    border: 1px solid #ccc;
     border-top: 0;
 }
 
@@ -6845,7 +6860,7 @@ ul#tocTree span {
 
 .localViewToggle a.active:after, div.localViewToggle h2:after {
     bottom: -1px;
-    border-bottom-color: #eee;
+    border-bottom-color: #fff;
     z-index: 4;
 }
 
@@ -7641,6 +7656,10 @@ ul.nestedList {
     position: relative;
 }
 
+.actionBar + .containerOptions > .liveArea {
+    border-top: 0;
+}
+
 #addFolderForm {
     margin: 0 -30px
 }
@@ -7683,19 +7702,23 @@ ul.tree li a.itemActive {
 
 .liveAreaTab,
 a.liveAreaTab,
-a.liveAreaTab:hover,
-a.liveAreaTab:focus,
-.actionBar ul li a.liveAreaTab:focus,
 .actionBar ul li.mainButton a.liveAreaTab,
 .actionBar ul li.secondaryButton a.liveAreaTab,
-.panelTabs li.active a.edit,
-.panelTabs li.active a.edit:hover,
-.panelTabs li.active a.edit:focus {
+.panelTabs li.active a.edit {
     position: relative;
     background-image: none;
     z-index: 2;
-    color: #fff;
-    background: #555;
+    color: #333;
+    background: #fff;
+    bottom: -1px;
+}
+
+a.liveAreaTab:hover,
+a.liveAreaTab:focus,
+.actionBar ul li a.liveAreaTab:focus,
+.panelTabs li.active a.edit:hover,
+.panelTabs li.active a.edit:focus {
+    color: #333 !important;
 }
 
 .actionBar ul li.mainButton a.liveAreaTab, .actionBar ul li.secondaryButton a.liveAreaTab {
@@ -8901,9 +8924,9 @@ div.lbContainer p.taskButtonsContent {
 
 a.selectedItem,
 a.selectedItem:focus {
-    background: #eff6ff;
-    border: 2px solid #9bb4cf;
-    color: #000;
+    background: #00c4f5;
+    border: 2px solid #00a6d6;
+    color: #fff;
     border-bottom: none;
     padding: 3px 4px;
     top: 3px;
@@ -10932,12 +10955,12 @@ div[id*="actionMenu_"] {
 }
 
 .portlet .portletBlock h4 {
-    background: #F1F1F1;
+    background: #e0e0e0;
     border: 0;
-    color: #444444;
+    color: #333;
     display: block;
     letter-spacing: 0;
-    margin: 0pt;
+    margin: 0;
     padding: 4px 9px;
     text-decoration: none;
 }
@@ -10985,7 +11008,7 @@ div[id*="actionMenu_"] {
 
 .viewHeader {
     background: transparent;
-    border: 0pt none;
+    border: 0 none;
     display: block;
 }
 
@@ -11272,7 +11295,7 @@ ul.memberList li {
 
 .portlet #loginBoxFull input[type="text"]:focus,
 .portlet #loginBoxFull input[type="password"]:focus {
-    border-color: #00add0;
+    border-color: #00a6d6;
     color: #000;
 }
 
