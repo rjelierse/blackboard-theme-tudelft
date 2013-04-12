@@ -1,0 +1,19 @@
+/* Remove spacing below page header */
+#pageHeader,
+#schemePreviewHead,
+.pageTitle {
+    padding: 20px 30px 0;
+}
+
+/* Decrease spacing for portlets */
+#moduleTitle,
+.portlet h2 {
+    padding: 4px 12px;
+}
+.portlet .collapsible {
+    padding: 4px 12px;
+}
+.portlet .portletList li {
+    padding: 3px 0 0 0;
+    margin: 0 0 3px 0;
+}
